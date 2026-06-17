@@ -199,7 +199,7 @@ def migrate_payloads(payloads_dir: Path, dry_run: bool = False):
     """Migrate payloads to new folder structure."""
     
     print("=" * 60)
-    print("PS5 UMTX2 Payload Migration Script")
+    print("PS5 Payload Migration Script")
     print("=" * 60)
     print()
     
