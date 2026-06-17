@@ -111,8 +111,8 @@ jobs:
       - name: Show git status
         run: |
           git status
-          ls -la document/en/ps5/
-          cat document/en/ps5/payloads.json || true
+          ls -la PS5_Payloads
+          cat PS5_Payloads/payloads.json || true
 
       - name: Commit if changed
         shell: bash
