@@ -1,0 +1,37 @@
+{
+  "id": "ps5debug",
+  "displayTitle": "ps5debug",
+  "description": "Debugger",
+  "authors": [
+    "SiSTR0",
+    "ctn123"
+  ],
+  "projectUrl": "https://github.com/GoldHEN/ps5debug",
+  "sourceRepo": "GoldHEN/ps5debug",
+  "supportedFirmwares": [
+    "3.",
+    "4.",
+    "5."
+  ],
+  "toPort": 9021,
+  "versions": [
+    {
+      "version": "1.0b5",
+      "fileName": "ps5debug_v1.0b5.elf",
+      "filePath": "payloads/ps5debug/1.0b5/ps5debug_v1.0b5.elf",
+      "downloadUrl": "",
+      "hash": "9dc888f66b8dd97d1317ac7260ab9499f709ddf0cbab59db82347c0aa93aaa8a",
+      "fileSize": 148808,
+      "releaseDate": "2023-06-01",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": []
+    }
+  ],
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "sourceType": "direct",
+  "forgejoBaseUrl": ""
+}
