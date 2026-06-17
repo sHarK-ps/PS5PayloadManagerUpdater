@@ -1,0 +1,114 @@
+{
+  "id": "pegasus-dl",
+  "displayTitle": "Pegasus-DL",
+  "description": "Direct package downloading from your PS5, managed through a local web interface.",
+  "authors": [
+    "pegasus-ps5"
+  ],
+  "projectUrl": "https://github.com/pegasus-ps5/pegasus-dl",
+  "sourceType": "github-release",
+  "sourceRepo": "pegasus-ps5/pegasus-dl",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "supportedFirmwares": [],
+  "versions": [
+    {
+      "version": "1.4.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/pegasus-dl/1.4.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.4.0/pegasus_dl.elf",
+      "hash": "3e2731fba643b7f303a6a6dc2092edf3bca213cc44d73463c9f74d3887c7bc09",
+      "fileSize": 19982680,
+      "releaseDate": "2026-06-15",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Added the File Manager tab for browsing PS5 storage, uploads, downloads, folder archive downloads, rename, copy, move, delete, and folder creation.",
+        "Added manual local `.pkg` installation from File Manager.",
+        "Added remote APR Emu downloads, selectable release/debug reinstalls, and latest-release updates without embedding a fixed SPRX in the payload.",
+        "Added APR Emu update/delete support for supported `.ffpkg` and `.ffpfsc` image-backed installs.",
+        "Improved large folder game deletion with faster cleanup and clearer progress.",
+        "Added PS5 Game Browser support to the scraper/catalog tooling."
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/pegasus-dl/1.3.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.3.0/pegasus_dl.elf",
+      "hash": "4fb014322f9f1470360d3e3e1357a46b8118876c625b71c928a999fd1e30058e",
+      "fileSize": 19621336,
+      "releaseDate": "2026-06-12",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "Added automatic extraction for supported single-file RAR/RAR5 and 7z package archives.",
+        "Added the installed-game Library page with metadata, art, storage details, APR Emu status, APR Emu update actions, and supported game deletion.",
+        "Bundled APR Emu 0.2.6 and added update support for folder-backed installs and exFAT image-backed installs.",
+        "Embedded nanoDNS and starts it automatically for browser-assisted provider capture.",
+        "Cleaned up the web UI with top navigation, compact queue behavior, local fonts, no-image placeholders, loading states, and panel layout fixes.",
+        "Fixed queue UI refresh issues and removed the browser warmup step when opening provider links."
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/pegasus-dl/1.2.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.2.0/pegasus_dl.elf",
+      "hash": "337b593f75a18c8cbb74bd1d0f238e6ccde0953d3265ddac8b9920d54aadf897",
+      "fileSize": 10236720,
+      "releaseDate": "2026-06-05",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "Segmented downloads report merge progress after all segments finish downloading.",
+        "Queue rows show a `merging` state so long copy/merge steps do not look stuck."
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/pegasus-dl/1.1.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.1.0/pegasus_dl.elf",
+      "hash": "0351eda2663a244db293015169685bd0d88ae537863cea786038715e92fb6f54",
+      "fileSize": 10235592,
+      "releaseDate": "2026-06-05",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "External Pegasus Resolver setup is no longer required.",
+        "Catalog sources by URL is supported.",
+        "Provider handling covers built-in resolver flows, direct browser capture, and",
+        "guarded capture for unknown links.",
+        "The PS5 browser may be opened during provider flows. Complete any provider",
+        "challenge there (eg. Cloudflare), then return Pegasus DL will capture the direct link automatically."
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/pegasus-dl/1.0.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.0.0/pegasus_dl.elf",
+      "hash": "ccf08f811e500fedd45b7ba0646342f37180891a0ff5bdc06b7cfe4a4601fe46",
+      "fileSize": 9553400,
+      "releaseDate": "2026-06-02",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "First public release of Pegasus DL.",
+        "Includes:",
+        "PS5-hosted web UI on port 6970",
+        "JSON catalog upload",
+        "searchable package library",
+        "queueing and download progress",
+        "destination folder selection from writable PS5 mounts",
+        "pause, resume, cancel, retry, and clear queue actions",
+        "optional Pegasus Resolver URL support"
+      ]
+    }
+  ]
+}
