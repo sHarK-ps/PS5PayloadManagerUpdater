@@ -76,8 +76,7 @@ jobs:
               | sed 's/,$//')
 
             git commit -m "chore(payloads): update ${CHANGES:-payloads}"
-          Run: $(date '+%Y-%m-%d %H:%M UTC')"
-              git push
+            git push
           fi
 
           Automated payload update:
