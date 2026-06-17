@@ -1248,7 +1248,7 @@ def generate_payload_map_js(payloads_config: List[Dict]) -> str:
 
 def main():
     print("=" * 60)
-    print("PS5 UMTX2 Payload Updater v2")
+    print("PS5 Payload Updater v2")
     print("=" * 60)
 
     # Ensure payloads directory exists
