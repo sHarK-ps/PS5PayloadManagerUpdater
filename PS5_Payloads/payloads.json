@@ -128,6 +128,15 @@
       "checksum": "6ea242cb1ed033f5111b63f0ed7d8162f30f417a778364213261636962cbf5fc"
     },
     {
+      "category": "np-fake-signin",
+      "name": "np-fake-signin",
+      "filename": "np-fake-signin-ps5.elf",
+      "url": "https://raw.githubusercontent.com/jmaillot/PS5PayloadManager/main/PS5_Payloads/payloads/np-fake-signin/1.3/np-fake-signin-ps5.elf",
+      "description": "ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state",
+      "version": "1.3",
+      "checksum": "f5c66fcb9e3f512e5463a7123d819b87f063d9955639366fa7ad26a2f0abefa4"
+    },
+    {
       "category": "ps5-versions",
       "name": "ps5-versions",
       "filename": "ps5-versions.elf",
