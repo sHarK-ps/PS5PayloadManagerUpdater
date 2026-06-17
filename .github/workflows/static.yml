@@ -79,10 +79,10 @@ jobs:
             git push
           fi
 
-          Automated payload update:
-          - Synced with latest GitHub releases
-          - Updated metadata and changelogs
-          - Verified compatibility
+          #Automated payload update:
+          #- Synced with latest GitHub releases
+          #- Updated metadata and changelogs
+          #- Verified compatibility
 
   deploy:
     needs: update-payloads
