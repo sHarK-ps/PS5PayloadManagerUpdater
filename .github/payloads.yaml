@@ -549,12 +549,7 @@ payloads:
         releaseDate: 2025-12-01
 
   # --- Sonic Loader: Web-based PS5 management dashboard ---
-  # Hosted on a Gitea instance (git.earthonion.com), NOT GitHub, and the site
-  # is behind an Anubis anti-bot proof-of-work gate. The auto-update workflow
-  # cannot fetch it (requests.get would download the bot-check HTML page).
-  # Must be updated manually: drop the new sonic-loader.elf under
-  # payloads/sonicloader/{version}/ and add a manualVersions entry here.
-  # Leave url empty so a missing file never triggers a corrupt download.
+  # Hosted on a Gitea instance (git.earthonion.com)
 
   - id: elf-arsenal
     displayTitle: elf-arsenal (SonicIso)
@@ -592,6 +587,24 @@ payloads:
         url: ""
         isDefault: true
         releaseDate: 2026-05-22
+
+ # --- NP Fake Signin : ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state. ---
+  # Hosted on a Gitea instance (git.earthonion.com)
+
+  - id: np-fake-signin
+    displayTitle: No Fake SignIn 
+    description: ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state
+    authors:
+      - earthonion
+    projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
+    sourceType: forgejo-release
+    sourceRepo: earthonion/np-fake-signin
+    sourcePattern: np-fake-signin-ps5*.elf
+    toPort: 9021
+    supportedFirmwares: []
+    license:
+      type: "GPL-3.0"
+      url: "https://git.etawen.dev/earthonion/np-fake-signin"
 
   # ===========================================================================
   # Pattern C: custom (JavaScript Actions - No Binary Download)
