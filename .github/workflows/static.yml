@@ -48,6 +48,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Debug git state
+        run: |
+          echo "===== GIT STATUS ====="
+          git status
+          echo "===== DIFF ====="
+          git diff
+          echo "===== STAGED ====="
+          git diff --cached         
+           
       - name: Commit changes
         if: success()
         run: |
