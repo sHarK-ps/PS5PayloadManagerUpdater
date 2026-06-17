@@ -20,6 +20,15 @@
       "checksum": "f913ba96bf87561bcc22f1391d2ad58515b3ed0a9e5199d63dbbd9125ec3c317"
     },
     {
+      "category": "cheatrunner",
+      "name": "cheatrunner",
+      "filename": "CheatRunner.elf",
+      "url": "https://raw.githubusercontent.com/jmaillot/PS5PayloadManager/main/PS5_Payloads/payloads/cheatrunner/0.13/CheatRunner.elf",
+      "description": "CheatRunner is a PS5 web launcher and cheat trainer for already-jailbroken PS5 consoles.",
+      "version": "0.13",
+      "checksum": "0490d46c0ae8d3029106551f588ca9479f32df485678eb73c29685ad3072090b"
+    },
+    {
       "category": "elf-arsenal",
       "name": "elf-arsenal",
       "filename": "elf-arsenal.elf",
