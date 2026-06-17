@@ -56,30 +56,34 @@ jobs:
           git diff
           echo "===== STAGED ====="
           git diff --cached         
-           
+
       - name: Commit changes
         if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet; then
-            # Get list of changed payloads
-            CHANGES=$(git diff --name-only | grep 'payloads/.*/metadata.json' | sed 's|PS5_Payloads/payloads/||g' | sed 's|/metadata.json||g' | tr '\n' ', ' | sed 's/,$//')
-            
-            # Create detailed commit message
-            if [ -n "$CHANGES" ]; then
-              git add .
-              git commit -m "chore(payloads): update $CHANGES
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            CHANGES=$(git diff --cached --name-only \
+              | grep '^PS5_Payloads/payloads/' \
+              | cut -d'/' -f3 \
+              | sort -u \
+              | tr '\n' ', ' \
+              | sed 's/,$//')
+
+            git commit -m "chore(payloads): update ${CHANGES:-payloads}"
+          Run: $(date '+%Y-%m-%d %H:%M UTC')"
+              git push
+          fi
 
           Automated payload update:
           - Synced with latest GitHub releases
           - Updated metadata and changelogs
           - Verified compatibility
-
-          Run: $(date '+%Y-%m-%d %H:%M UTC')"
-              git push
-            fi
-          fi
 
   deploy:
     needs: update-payloads
