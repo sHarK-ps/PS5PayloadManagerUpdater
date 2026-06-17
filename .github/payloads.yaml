@@ -348,7 +348,7 @@ payloads:
     projectUrl: https://github.com/notmaj0r/CheatRunner
     sourceType: github-release
     sourceRepo: notmaj0r/CheatRunner
-    sourcePattern: CheatRunner.elf
+    sourcePattern: CheatRunner*.elf
     toPort: 9021
     supportedFirmwares: []
     license:
