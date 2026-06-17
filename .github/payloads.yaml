@@ -356,6 +356,44 @@ payloads:
       url: "https://github.com/notmaj0r/CheatRunner/blob/main/LICENSE"
 
 
+ # --- NP Fake Signin : ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state. ---
+  # Hosted on a Gitea instance (git.earthonion.com)
+
+  - id: np-fake-signin
+    displayTitle: No Fake SignIn 
+    description: ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state
+    authors:
+      - earthonion
+    projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
+    sourceType: forgejo-release
+    sourceRepo: earthonion/np-fake-signin
+    sourcePattern: np-fake-signin-ps5*.elf
+    toPort: 9021
+    supportedFirmwares: []
+    license:
+      type: "GPL-3.0"
+      url: "https://git.etawen.dev/earthonion/np-fake-signin"
+
+
+ # --- Chukei-DNS : Chukei DNS is a lightweight DNS relay server. It provides DNS-over-HTTPS (DoH) functionality to bypass DNS hijacking by ISPs and other network intermediaries while offering domain filtering capabilities to block unwanted connections like system updates and telemetry.
+
+  - id: chukei-dns
+    displayTitle: Chukei-DNS
+    description: Chukei DNS is a lightweight DNS relay server. It provides DNS-over-HTTPS (DoH) functionality to bypass DNS hijacking by ISPs and other network intermediaries while offering domain filtering capabilities to block unwanted connections like system updates and telemetry.
+    authors:
+      - Al Azif
+    projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
+    sourceType: github-release
+    sourceRepo: Al-Azif/chukei-dns
+    sourcePattern: chukei-ps5*.elf
+    toPort: 9021
+    supportedFirmwares: []
+    license:
+      type: "GPL-3.0"
+      url: "https://github.com/Al-Azif/chukei-dns/blob/main/LICENSE"
+
+
+
   # ===========================================================================
   # Pattern B: direct (Manual URL Management)
   # Use this when:
@@ -588,23 +626,7 @@ payloads:
         isDefault: true
         releaseDate: 2026-05-22
 
- # --- NP Fake Signin : ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state. ---
-  # Hosted on a Gitea instance (git.earthonion.com)
 
-  - id: np-fake-signin
-    displayTitle: No Fake SignIn 
-    description: ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state
-    authors:
-      - earthonion
-    projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
-    sourceType: forgejo-release
-    sourceRepo: earthonion/np-fake-signin
-    sourcePattern: np-fake-signin-ps5*.elf
-    toPort: 9021
-    supportedFirmwares: []
-    license:
-      type: "GPL-3.0"
-      url: "https://git.etawen.dev/earthonion/np-fake-signin"
 
   # ===========================================================================
   # Pattern C: custom (JavaScript Actions - No Binary Download)
