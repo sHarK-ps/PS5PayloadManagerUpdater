@@ -1,6 +1,3 @@
-# PS5PayloadManager
-
-
 # 🎮 PS5PayloadManager Sources
 
 <p align="center">
