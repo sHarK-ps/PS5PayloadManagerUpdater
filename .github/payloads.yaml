@@ -345,7 +345,7 @@ payloads:
     description: CheatRunner is a PS5 web launcher and cheat trainer for already-jailbroken PS5 consoles.
     authors:
       - notmaj0r
-    projectUrl: https://github.com/BestPig/BackPork
+    projectUrl: https://github.com/notmaj0r/CheatRunner
     sourceType: github-release
     sourceRepo: notmaj0r/CheatRunner
     sourcePattern: CheatRunner.elf
