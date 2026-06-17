@@ -382,7 +382,7 @@ payloads:
     description: Chukei DNS is a lightweight DNS relay server. It provides DNS-over-HTTPS (DoH) functionality to bypass DNS hijacking by ISPs and other network intermediaries while offering domain filtering capabilities to block unwanted connections like system updates and telemetry.
     authors:
       - Al Azif
-    projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
+    projectUrl: https://github.com/Al-Azif/chukei-dns
     sourceType: github-release
     sourceRepo: Al-Azif/chukei-dns
     sourcePattern: chukei-ps5*.elf
@@ -392,6 +392,39 @@ payloads:
       type: "GPL-3.0"
       url: "https://github.com/Al-Azif/chukei-dns/blob/main/LICENSE"
 
+ # --- Pegasus-DL : Direct package downloading from your PS5, managed through a local web interface. 
+
+  - id: pegasus-dl
+    displayTitle: Pegasus-DL
+    description: Direct package downloading from your PS5, managed through a local web interface.
+    authors:
+      - pegasus-ps5
+    projectUrl: https://github.com/pegasus-ps5/pegasus-dl
+    sourceType: github-release
+    sourceRepo: pegasus-ps5/pegasus-dl
+    sourcePattern: pegasus_dl*.elf
+    toPort: 9021
+    supportedFirmwares: []
+    license:
+      type: ""
+      url: "https://github.com/pegasus-ps5/pegasus-dl"
+
+ # --- Spectrum Library : lightweight content manager designed to organize and deliver supported game files in a simple, clean, and user-friendly way. It provides a streamlined library interface with categories, cover artwork, file details, download controls, and installation status, making it easier for users to browse available content and manage their downloads from one place.
+
+  - id: spectrum-library
+    displayTitle: Spectrum Library
+    description: lightweight content manager designed to organize and deliver supported game files
+    authors:
+      - Phoenixx1202
+    projectUrl: https://github.com/Phoenixx1202/Spectrum-Library
+    sourceType: github-release
+    sourceRepo: Phoenixx1202/Spectrum-Library
+    sourcePattern: SpectrumLibrary_*.elf 
+    toPort: 9021
+    supportedFirmwares: []
+    license:
+      type: ""
+      url: "https://github.com/Phoenixx1202/Spectrum-Library"
 
 
   # ===========================================================================
