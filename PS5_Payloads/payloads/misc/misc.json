@@ -1,0 +1,32 @@
+{
+  "name": "misc payloads",
+  "payloads": [
+    {
+      "category": "misc",
+      "name": "ps5-remoteplay-get-pin",
+      "filename": "rp-get-pin.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/rp-get-pin/0.1.1/rp-get-pin.elf",
+      "description": "Get Remote Play PIN for offline activated users. Send again to cancel.",
+      "version": "0.1.1",
+      "checksum": "1d611c1856dd2f4b4b6cb42ead1128a7f08a26585788f92de79fa4f67d721472"
+    },
+    {
+      "category": "misc",
+      "name": "ps5-versions",
+      "filename": "ps5-versions.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/ps5-versions/1.0/ps5-versions.elf",
+      "description": "Shows kernel build, os and sdk versions",
+      "version": "1.0",
+      "checksum": "4df615bf70ad51d977f4f2898ae23b7c7349d32afe0e37783d8b62aedd7700be"
+    },
+    {
+      "category": "misc",
+      "name": "ps5debug",
+      "filename": "ps5debug.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/ps5debug-dizz/0.0.1-r2/ps5debug.elf",
+      "description": "Debugger, open source version by DizzRL",
+      "version": "0.0.1-r2",
+      "checksum": "550885996e8e44b050b8bbfabd3e4740076065da1d3468d4798ddbbc22370a2f"
+    }
+  ]
+}
