@@ -4,10 +4,10 @@
     {
       "name": "elf-arsenal (SonicIso)",
       "filename": "elf-arsenal.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/aiotools/elf-arsenal/1.6.19/elf-arsenal.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/aiotools/elf-arsenal/1.6.21/elf-arsenal.elf",
       "description": "Web-based PS5 management dashboard - launch games, cheats, install homebrew and PKGs, file transfer, fan control, and offline account activation. Self-contained with bundled Lapy JB Daemon (no etaHEN needed). WebUI on port 6969.",
-      "version": "1.6.19",
-      "checksum": "888d50c7661afbac5822e51c40d47cdbd3c7c05407c3f256ccd600c66042d9cd"
+      "version": "1.6.21",
+      "checksum": "cec800889364e4e8a4586989f27a1e31717b3b384683386b88deef9c78bc50dd"
     }
   ]
 }
