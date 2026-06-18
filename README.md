@@ -24,7 +24,8 @@ You can also add individual categories using these links :
 - Trophy : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/trophy/trophy.json
 
 ## Credits
-- [itsPLK](https://github.com/itsPLK/ps5-payload-manager) for all his Payload Management — this repo wouldn't exist without him letting adding 3rd party sources to it
+- [itsPLK](https://github.com/itsPLK/ps5-payload-manager) for all his Payload Management — this repo wouldn't exist wuthout letting us the possibility to add 3rd party sources to it.
+- [kemalsanli](https://github.com/kemalsanli/umtx2) for his workflow ideas.
 - **All PS5 homebrew community members who hard work to provide us such good payloads**
 
 Individual payloads retain their original licenses. Check the respective GitHub repositories or the Licences button in the app for details.
