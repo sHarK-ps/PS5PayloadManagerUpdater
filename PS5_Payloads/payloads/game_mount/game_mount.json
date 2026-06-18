@@ -1,0 +1,41 @@
+{
+  "name": "game_mount payloads",
+  "payloads": [
+    {
+      "category": "game_mount",
+      "name": "BackPork",
+      "filename": "ps5-backpork.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/backpork/0.1/ps5-backpork.elf",
+      "description": "Background payload for sideloading system libraries into PS5 games",
+      "version": "0.1",
+      "checksum": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52"
+    },
+    {
+      "category": "game_mount",
+      "name": "ShadowMountPlus",
+      "filename": "shadowmountplus.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/shadowmountplus/1.6test15-fix2/shadowmountplus.elf",
+      "description": "Automatic game image mounter - Mount .ffpkg, .exfat, and .ffpfs images automatically without manual intervention",
+      "version": "1.6test15-fix2",
+      "checksum": "8ab32f4cede840a73515c05697fe81759bc98cf41fc22b43e09943262f447e99"
+    },
+    {
+      "category": "game_mount",
+      "name": "kstuff-lite (drakmor fork)",
+      "filename": "kstuff.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/kstuff-lite/1.2-dr-test2/kstuff.elf",
+      "description": "FPKG enabler - Performance optimized fork with 1.5-2x speed improvement",
+      "version": "1.2-dr-test2",
+      "checksum": "2b699d411079a21dba7c39a02993fc0fb21e52f434103e884a0c892fafe56b75"
+    },
+    {
+      "category": "game_mount",
+      "name": "ps5-kstuff (EchoStretch fork)",
+      "filename": "kstuff.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/kstuff-echostretch/1.6.7/kstuff.elf",
+      "description": "FPKG enabler - Community fork with additional patches",
+      "version": "1.6.7",
+      "checksum": "f1c1f4b2b6395644af04cbe9828aba58586acf7aacb9e01113cac92ce16e3569"
+    }
+  ]
+}

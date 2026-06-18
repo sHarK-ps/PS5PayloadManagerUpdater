@@ -1,0 +1,68 @@
+{
+  "name": "server payloads",
+  "payloads": [
+    {
+      "category": "server",
+      "name": "Chukei-DNS",
+      "filename": "chukei-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/chukei-dns/0.9.0/chukei-ps5.elf",
+      "description": "Chukei DNS is a lightweight DNS relay server. It provides DNS-over-HTTPS (DoH) functionality to bypass DNS hijacking by ISPs and other network intermediaries while offering domain filtering capabilities to block unwanted connections like system updates and telemetry.",
+      "version": "0.9.0",
+      "checksum": "0cf13e1ed87b57ffa4fdcfca5d9afe1572be29b4f632677cedf17657a972d750"
+    },
+    {
+      "category": "server",
+      "name": "ELF Loader",
+      "filename": "elfldr-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/elfldr/0.23/elfldr-ps5.elf",
+      "description": "ELF loader",
+      "version": "0.23",
+      "checksum": "092d16ee0ede0c494947efd38d1a17bbd7cc4b022d3858ea898833c188c703e8"
+    },
+    {
+      "category": "server",
+      "name": "ftpsrv",
+      "filename": "ftpsrv-ps5-install.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/ftpsrv/0.20/ftpsrv-ps5-install.elf",
+      "description": "FTP server. Runs on port 2121.",
+      "version": "0.20",
+      "checksum": "23f69de0f1ab1e1a3869473e87a271f750ec595056df0142fabbf21f5153c077"
+    },
+    {
+      "category": "server",
+      "name": "gdbsrv",
+      "filename": "gdbsrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/gdbsrv/0.8/gdbsrv-ps5.elf",
+      "description": "GDB server. Runs on port 2159.",
+      "version": "0.8",
+      "checksum": "7621b829bd8b6d6f3d2328fa12c16af956b0ca128250f92a91eddc100c87f208"
+    },
+    {
+      "category": "server",
+      "name": "klogsrv",
+      "filename": "klogsrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/klogsrv/0.8/klogsrv-ps5.elf",
+      "description": "Klog server. Runs on port 3232.",
+      "version": "0.8",
+      "checksum": "f6eb1b415ecf3340b89a56a0cb04ba5c714430085851ada13a98012b63a5a4cf"
+    },
+    {
+      "category": "server",
+      "name": "shsrv",
+      "filename": "shsrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/shsrv/0.18.2/shsrv-ps5.elf",
+      "description": "Telnet shell server. Runs on port 2323.",
+      "version": "0.18.2",
+      "checksum": "990f7fbcf3761f97db9b97638d3e119352447fb904b2cf70b191c02289e1c69e"
+    },
+    {
+      "category": "server",
+      "name": "websrv",
+      "filename": "websrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.32/websrv-ps5.elf",
+      "description": "Custom homebrew loader. Runs on port 8080.",
+      "version": "0.32",
+      "checksum": "8dd24df100bff6db156e86bdf9380d5c0fcd2a680c2b08f5c87380d5007190c5"
+    }
+  ]
+}
