@@ -1,0 +1,36 @@
+{
+  "id": "backpork",
+  "displayTitle": "BackPork",
+  "description": "Background payload for sideloading system libraries into PS5 games",
+  "category": "game_mount",
+  "authors": [
+    "BestPig"
+  ],
+  "projectUrl": "https://github.com/BestPig/BackPork",
+  "sourceType": "github-release",
+  "sourceRepo": "BestPig/BackPork",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "GPL-3.0",
+    "url": "https://github.com/BestPig/BackPork/blob/main/LICENSE"
+  },
+  "supportedFirmwares": [],
+  "versions": [
+    {
+      "version": "0.1",
+      "fileName": "ps5-backpork.elf",
+      "filePath": "payloads/game_mount/backpork/0.1/ps5-backpork.elf",
+      "downloadUrl": "https://github.com/BestPig/BackPork/releases/download/0.1/ps5-backpork.elf",
+      "hash": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52",
+      "fileSize": 99800,
+      "releaseDate": "2026-04-30",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Initial oink release \ud83d\udc3d",
+        "Rebuilt with the latest SDK to support up to FW 12.0."
+      ]
+    }
+  ]
+}

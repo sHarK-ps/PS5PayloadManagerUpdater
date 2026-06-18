@@ -1,0 +1,25 @@
+{
+  "id": "ps5debug",
+  "displayTitle": "ps5debug",
+  "description": "Debugger",
+  "category": "misc",
+  "authors": [
+    "SiSTR0",
+    "ctn123"
+  ],
+  "projectUrl": "https://github.com/GoldHEN/ps5debug",
+  "sourceType": "direct",
+  "sourceRepo": "GoldHEN/ps5debug",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "supportedFirmwares": [
+    "3.",
+    "4.",
+    "5."
+  ],
+  "versions": []
+}

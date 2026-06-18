@@ -1,0 +1,43 @@
+{
+  "id": "spectrum-library",
+  "displayTitle": "Spectrum Library",
+  "description": "lightweight content manager designed to organize and deliver supported game files",
+  "category": "download",
+  "authors": [
+    "Phoenixx1202"
+  ],
+  "projectUrl": "https://github.com/Phoenixx1202/Spectrum-Library",
+  "sourceType": "github-release",
+  "sourceRepo": "Phoenixx1202/Spectrum-Library",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "supportedFirmwares": [],
+  "versions": [
+    {
+      "version": "SpectrumLibrary_1.4",
+      "fileName": "SpectrumLibrary_1.4.elf",
+      "filePath": "payloads/download/spectrum-library/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",
+      "hash": "de2a7b8c192fc4f2d3c2210123d662a0a2e09998e2000fa064ca969ac72d427d",
+      "fileSize": 5072504,
+      "releaseDate": "2026-06-14",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Grouped entries with the same `titleId` into one library card.",
+        "Detail view now shows individual variants for games, formats, DLCs, and backports.",
+        "Destination shortcuts were simplified to `/data`, `/mnt`, and `/mnt/usb0`.",
+        "Poster rendering now uses full-image fit to avoid cutting logos and cover text.",
+        "Catalog items can now use the optional `apremu` field, shown as a red cover badge.",
+        "Arabic and Turkish languages \u200b\u200badded.",
+        "Downloads with connection errors can be resumed from where they were interrupted.",
+        "<img width=\"1337\" height=\"669\" alt=\"image\" src=\"https://github.com/user-attachments/assets/321ee3d4-27bb-4e46-949a-ba1fe1db248f\" />",
+        "<img width=\"1344\" height=\"758\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fbf81912-ed9a-4753-8169-921cd43e5a49\" />"
+      ]
+    }
+  ]
+}
