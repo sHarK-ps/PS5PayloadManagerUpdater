@@ -2,7 +2,6 @@
   "name": "cheats payloads",
   "payloads": [
     {
-      "category": "cheats",
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/cheats/cheatrunner/0.13/CheatRunner.elf",

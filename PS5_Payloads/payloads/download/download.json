@@ -2,7 +2,6 @@
   "name": "download payloads",
   "payloads": [
     {
-      "category": "download",
       "name": "Pegasus-DL",
       "filename": "pegasus_dl.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.4.0/pegasus_dl.elf",
@@ -11,7 +10,6 @@
       "checksum": "3e2731fba643b7f303a6a6dc2092edf3bca213cc44d73463c9f74d3887c7bc09"
     },
     {
-      "category": "download",
       "name": "Spectrum Library",
       "filename": "SpectrumLibrary_1.4.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",

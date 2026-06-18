@@ -2,7 +2,6 @@
   "name": "aiotools payloads",
   "payloads": [
     {
-      "category": "aiotools",
       "name": "elf-arsenal (SonicIso)",
       "filename": "elf-arsenal.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/aiotools/elf-arsenal/1.6.19/elf-arsenal.elf",
