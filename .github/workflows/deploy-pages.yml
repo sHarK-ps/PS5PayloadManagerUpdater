@@ -48,6 +48,101 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate per-category and global payloads.json
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BASE_PATH="PS5_Payloads/payloads"
+          GLOBAL_FILE="PS5_Payloads/payloads.json"
+          REPO_URL="https://raw.githubusercontent.com/${{ github.repository }}/main"
+
+          # jq filter: pick the default version (isDefault, else most recent
+          # releaseDate, else first) and build a flat entry. Returns null for
+          # payloads with no usable binary version (e.g. customAction payloads).
+          JQ_FILTER='
+            (.versions // []) as $vs |
+            ( ($vs | map(select(.isDefault == true)) | first)
+              // ($vs | sort_by(.releaseDate // "") | last)
+              // ($vs | first)
+            ) as $v |
+            if ($v == null) or (($v.fileName // "") == "") then null else
+              {
+                category: .category,
+                name: .displayTitle,
+                filename: $v.fileName,
+                url: ($repoUrl + "/PS5_Payloads/" + $v.filePath),
+                description: .description,
+                version: $v.version,
+                checksum: $v.hash
+              }
+            end
+          '
+
+          ALL_PAYLOADS="[]"
+          TMP_DIR=$(mktemp -d)
+          trap 'rm -rf "$TMP_DIR"' EXIT
+
+          if [ ! -d "$BASE_PATH" ]; then
+            echo "No payloads directory found at $BASE_PATH"
+          else
+            # IMPORTANT: group by the `category` field stored INSIDE each
+            # metadata.json, not by the enclosing folder name. update_payloads.py
+            # always writes metadata.json under the category currently set in
+            # payloads.yaml, but if a payload's category is later changed,
+            # the OLD folder (with its old, now-stale metadata.json) can be
+            # left behind on disk. Trusting the folder name would then file
+            # that stale entry under the wrong/old category.
+            while IFS= read -r -d '' METADATA_FILE; do
+              ENTRY=$(jq -c --arg repoUrl "$REPO_URL" "$JQ_FILTER" "$METADATA_FILE")
+              [ "$ENTRY" = "null" ] && continue
+
+              CATEGORY_NAME=$(jq -r '.category // "uncategorized"' "$METADATA_FILE")
+              # sanitize only for use as a filename - the real category value
+              # (used inside the JSON content) is untouched
+              SAFE_CATEGORY=$(echo "$CATEGORY_NAME" | tr -s '/ ' '-')
+
+              CATEGORY_FILE="$TMP_DIR/$SAFE_CATEGORY.json"
+              [ -f "$CATEGORY_FILE" ] || echo "[]" > "$CATEGORY_FILE"
+
+              jq -c --argjson e "$ENTRY" '. + [$e]' "$CATEGORY_FILE" > "$CATEGORY_FILE.tmp"
+              mv "$CATEGORY_FILE.tmp" "$CATEGORY_FILE"
+
+              ALL_PAYLOADS=$(jq -c --argjson e "$ENTRY" '. + [$e]' <<< "$ALL_PAYLOADS")
+            done < <(find "$BASE_PATH" -type f -name "metadata.json" -print0)
+
+            for CATEGORY_FILE in "$TMP_DIR"/*.json; do
+              [ -e "$CATEGORY_FILE" ] || continue
+              SAFE_CATEGORY=$(basename "$CATEGORY_FILE" .json)
+              CATEGORY_NAME=$(jq -r '.[0].category' "$CATEGORY_FILE")
+              PAYLOAD_COUNT=$(jq 'length' "$CATEGORY_FILE")
+
+              # Write the per-category JSON inside that category's own folder
+              # under PS5_Payloads/payloads/ (e.g. PS5_Payloads/payloads/aiotools/aiotools.json).
+              # Create the folder if it doesn't already exist (e.g. a category
+              # that only has customAction payloads with no on-disk folder yet).
+              CATEGORY_DIR="$BASE_PATH/$SAFE_CATEGORY"
+              mkdir -p "$CATEGORY_DIR"
+
+              jq -n \
+                --arg name "$CATEGORY_NAME payloads" \
+                --argjson payloads "$(jq 'sort_by(.name)' "$CATEGORY_FILE")" \
+                '{name: $name, payloads: $payloads}' \
+                > "$CATEGORY_DIR/$SAFE_CATEGORY.json"
+
+              echo "Generated $CATEGORY_DIR/$SAFE_CATEGORY.json ($PAYLOAD_COUNT payload(s))"
+            done
+          fi
+
+          jq -n \
+            --arg name "PS5 Payload Manager Updater (Unofficial)" \
+            --argjson payloads "$(jq 'sort_by(.category, .name)' <<< "$ALL_PAYLOADS")" \
+            '{name: $name, payloads: $payloads}' \
+            > "$GLOBAL_FILE"
+
+          echo "Generated $GLOBAL_FILE:"
+          cat "$GLOBAL_FILE"
+
       - name: Debug git state
         run: |
           echo "===== GIT STATUS ====="
