@@ -1,0 +1,57 @@
+{
+  "id": "byepervisor",
+  "displayTitle": "Byepervisor HEN",
+  "description": "FPKG enabler",
+  "category": "hen_loaders",
+  "authors": [
+    "SpecterDev",
+    "ChendoChap",
+    "flatz",
+    "fail0verflow",
+    "Znullptr",
+    "kiwidog",
+    "sleirsgoevy",
+    "EchoStretch",
+    "LightningMods",
+    "BestPig",
+    "zecoxao",
+    "TheOfficialFloW"
+  ],
+  "projectUrl": "https://github.com/EchoStretch/Byepervisor",
+  "sourceType": "github-release",
+  "sourceRepo": "EchoStretch/Byepervisor",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": "https://github.com/EchoStretch/Byepervisor/blob/main/LICENSE"
+  },
+  "supportedFirmwares": [
+    "1.00",
+    "1.01",
+    "1.02",
+    "1.12",
+    "1.14",
+    "2.00",
+    "2.20",
+    "2.25",
+    "2.26",
+    "2.30",
+    "2.50",
+    "2.70"
+  ],
+  "versions": [
+    {
+      "version": "1.1",
+      "fileName": "byepervisor.elf",
+      "filePath": "payloads/hen_loaders/byepervisor/1.1/byepervisor.elf",
+      "downloadUrl": "https://github.com/EchoStretch/Byepervisor/releases/download/1.1/byepervisor.elf",
+      "hash": "f913ba96bf87561bcc22f1391d2ad58515b3ed0a9e5199d63dbbd9125ec3c317",
+      "fileSize": 348256,
+      "releaseDate": "2026-01-20",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": []
+    }
+  ]
+}

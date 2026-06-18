@@ -1,0 +1,31 @@
+{
+  "id": "kstuff",
+  "displayTitle": "ps5-kstuff",
+  "description": "FPKG enabler",
+  "category": "game_mount",
+  "authors": [
+    "sleirsgoevy",
+    "john-tornblom",
+    "EchoStretch",
+    "buzzer-re",
+    "idlesauce",
+    "BestPig",
+    "LightningMods",
+    "zecoxao"
+  ],
+  "projectUrl": "https://github.com/EchoStretch/ps4jb-payloads/",
+  "sourceType": "direct",
+  "sourceRepo": "EchoStretch/ps4jb-payloads",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "supportedFirmwares": [
+    "3.",
+    "4.",
+    "5."
+  ],
+  "versions": []
+}

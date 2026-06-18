@@ -1,0 +1,217 @@
+{
+  "id": "elf-arsenal",
+  "displayTitle": "elf-arsenal (SonicIso)",
+  "description": "Web-based PS5 management dashboard - launch games, cheats, install homebrew and PKGs, file transfer, fan control, and offline account activation. Self-contained with bundled Lapy JB Daemon (no etaHEN needed). WebUI on port 6969.",
+  "category": "aiotools",
+  "authors": [
+    "soniciso"
+  ],
+  "projectUrl": "https://git.etawen.dev/soniciso/elf-arsenal",
+  "sourceType": "forgejo-release",
+  "sourceRepo": "soniciso/elf-arsenal",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "GPL-3.0",
+    "url": "https://git.etawen.dev/soniciso/elf-arsenal"
+  },
+  "supportedFirmwares": [],
+  "versions": [
+    {
+      "version": "1.6.19",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.19/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.19/elf-arsenal.elf",
+      "hash": "888d50c7661afbac5822e51c40d47cdbd3c7c05407c3f256ccd600c66042d9cd",
+      "fileSize": 4692176,
+      "releaseDate": "2026-06-15",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "**Root cause**: `fanThreshold`/`fanTarget` were defined in `App` but never passed as props to the `Settings` component \u2014 every toggle call was `/api/fan/set?temp=undefined`, and the toggle silently did nothing. Fixed.",
+        "Disabling fan override now persists across Arsenal restarts \u2014 `/api/fan/unpin` now calls `config_save()` so `fan_threshold=0` is written to disk.",
+        "Fan watcher already re-applies the pinned threshold every 15 s to fight the firmware's automatic reset on game launch (was always there, now actually reachable).",
+        "`config.ini` had been silently corrupting itself in a loop:",
+        "`stringifyINI` turned flat C keys (`fan_threshold=0`) into character-indexed INI sections (`[fan_threshold] / 0=4 / 1=0`).",
+        "`config_preserve_ui_sections` faithfully re-copied every section it found \u2014 including the garbage ones.",
+        "Repeat forever.",
+        "Both sides fixed:",
+        "**`stringifyINI`** now writes root-level primitives (flat C-backend keys) as verbatim `key=value` lines before emitting any `[Section]` blocks.",
+        "**`config_preserve_ui_sections`** switched from deny-list to **allow-list** \u2014 only `[Settings]`, `[Sentinel]`, `[Experimental]`, `[CustomPaths]`, `[Blacklist]`, `[AutoPayloads]`, `[PKG]` are preserved. Garbage sections and the legacy `[FanControl]` block are silently dropped on every save."
+      ]
+    },
+    {
+      "version": "1.6.8",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.8/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.8/elf-arsenal.elf",
+      "hash": "1aee4170a39c82622d1d06ecd84a4f7d1c4458dc8b561068c3723da16dffa65d",
+      "fileSize": 6330576,
+      "releaseDate": "2026-06-15",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "**PS5 browser loads ~50\u00d7 faster** \u2014 JSX + Tailwind precompiled at build time. 547 KB inline HTML \u2192 11 KB shell + separately cached 519 KB `app.js`.",
+        "**Mobile layout** \u2014 clean responsive layout on phones (iOS Safari, Android Chrome): bottom nav, 2-column portrait grid, proper touch targets. Desktop unchanged.",
+        "**Mobile game cards** \u2014 info/favorites/hide quick-action buttons on phones. Hidden on PS5 and desktop.",
+        "**FW 12 execute-only page fix** \u2014 `mprotect()` before `pt_copyout()` makes SHN/MC4 cheats work on FW 8.40+ including FW 12.",
+        "Full in-browser file manager under the **Files** tab \u2014 browse, copy, move, delete across `/data`, `/user`, `/system_data`, USB/ext.",
+        "**NomadicDNS (`62.210.38.117`) is retired and no longer works.** Use `127.0.0.1` (nanoDNS, bundled, on by default).",
+        "**Network not connecting after JB?** Wait for Arsenal to start, then **Settings \u2192 Network \u2192 turn off then on**.",
+        "```",
+        "nc -q0 <PS5_IP> 9021 < elf-arsenal.elf",
+        "```"
+      ]
+    },
+    {
+      "version": "1.6.7",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.7/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.7/elf-arsenal.elf",
+      "hash": "6853129b5e625640972413d2b75b344cfb5816c6a5e5e9cf366d810ee02b4182",
+      "fileSize": 6330576,
+      "releaseDate": "2026-06-06",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": []
+    },
+    {
+      "version": "1.6.6",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.6/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.6/elf-arsenal.elf",
+      "hash": "9ada95a6f0fe3693bdb2d8aee15c178165382c79069037b97b9b7730d9a11fef",
+      "fileSize": 4642864,
+      "releaseDate": "2026-06-03",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "**FW Spoof fix**: payload now applies the version you enter (e.g. `9.60`) \u2014 previously hardcoded `99.99` and ignored your input",
+        "**klogsrv visibility**: fw-spoof output now goes to stderr and appears in the klog viewer",
+        "**UI clarification**: `ps4_sdk_version` and `upd_version` are patched (games/update checks); PS5 Settings \"System Software\" reads a separate sysctl and is unaffected",
+        "**DPI fix from v1.6.5** still applies (10.xx/11.xx authid + timing)"
+      ]
+    },
+    {
+      "version": "1.6.5",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.5/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.5/elf-arsenal.elf",
+      "hash": "f6b72d84a134af7b1a6f5c5c1b40318953c0045791a3a04003d83c5a1769cc64",
+      "fileSize": 4642864,
+      "releaseDate": "2026-06-03",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "**Root cause:** DPI v1 calls `sceAppInstUtilInitialize()` at startup before kstuff has launched and patched the kernel. The 10-second timeout fired first \u2192 `init_rc = -0xDEAD` \u2192 all installs silently failed. On FW 11.00+, `SYSTEM_AUTHID` is also required and was never set on the spawned DPI process.",
+        "**Fixes:**",
+        "DPI v1: 25 s startup sleep so kstuff is ready before AppInstUtil init",
+        "DPI v1: lazy retry on each failed install request (catches late IPMI)",
+        "DPI v1 + v2: Arsenal now calls `jb_escalate_pid()` after spawning DPI (same pattern as CheatRunner) \u2014 grants `SYSTEM_AUTHID` for FW 11.xx+",
+        "DPI v2: bind retry with backoff instead of silent immediate exit",
+        "Both: diagnostic stderr logs now visible in klogsrv",
+        "**Previous releases also in this build:**",
+        "fw-spoof 10.xx KP fix (8-byte needle + scan limit)",
+        "Toggle toasts fixed (lapyjb/CheatRunner/FPKGGuard/DPIv2)"
+      ]
+    },
+    {
+      "version": "1.6.4",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.4/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.4/elf-arsenal.elf",
+      "hash": "fe26dca01014b3c9113e97139feaafe93049e87e14fa057a73dd903098308a7e",
+      "fileSize": 4642864,
+      "releaseDate": "2026-06-01",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "**Cheat game list fix**: After a full repo download, the staged-cheat game list was always empty because `list_cheats()` only scanned the flat root \u2014 all downloaded files live in `json/`/`shn/`/`mc4/` subdirs. Now scans all four paths; 3000+ titles correctly appear.",
+        "**Format selector tabs**: When multiple formats exist for a game (e.g. SHN + MC4), tab buttons appear above the cheat list so you can pick which version to load. Example: Dead Space SHN \u2192 1 cheat, MC4 \u2192 10 cheats. Tabs are hidden for single-format games.",
+        "Global toggle + per-patch enable/disable across all three CheatRunner scan dirs",
+        "Upload new XML patch files from the browser",
+        "Source badges (Arsenal / CheatRunner / CheatRunner PS5)",
+        "Drop `.elf` files into `/data/elf-arsenal/plugins/` and manage them from Settings"
+      ]
+    },
+    {
+      "version": "1.6.3",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.3/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.3/elf-arsenal.elf",
+      "hash": "174b11bb0ac245400e500adcf0fe6beb9041c8fe666d8d494372bd8a5053eab9",
+      "fileSize": 5265472,
+      "releaseDate": "2026-05-31",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "DPI v2 (etaHEN-compatible HTTP installer on port 12800) bundled",
+        "Switch between DPI v1 (loopback :9040) and DPI v2 (HTTP :12800) from Settings \u2192 PKG Installer \u2192 DPI version",
+        "Mutual exclusion: switching version SIGKILLs the old daemon before starting the new one",
+        "DPI version choice persists across reboots via config.ini",
+        "Accurate DPI status badge (v1/v2/not running)",
+        "i18n on all pages + full Google Translate language list"
+      ]
+    },
+    {
+      "version": "1.6.2",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.2/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.2/elf-arsenal.elf",
+      "hash": "cc1201385511f6cd4b1de71c4ebc69d201a7ea95882a783ac7d913414cae0602",
+      "fileSize": 5199936,
+      "releaseDate": "2026-05-27",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "**FPKG Guard now optional** \u2014 off by default; toggle it on in Settings \u2192 FPKG Guard. When disabled, the /fpkg-guard page shows a friendly \"enable in Settings\" message. Auto-relocks after 10 min of no install activity.",
+        "**Storage gauges** \u2014 main page temperature card now shows Internal SSD, M.2, and USB used/free bars with color-coded fill. Sensors page has a full Storage section.",
+        "**fpkg-guard daemon** \u2014 standalone embedded ELF that auto-protects PS4 CUSA folders (0555 lock), auto-snapshots app.db/appinfo.db, and sweeps orphaned move-sources.",
+        "**FW spoof** \u2014 Patches reported system version to 99.99 via kernel data write (non-persistent; needs kstuff). Credit: Ms. Illusony (ps5-fw-spoof).",
+        "**kmonitor FW 12.70** \u2014 sysentvec offsets added; kstuff enable/disable works on 12.70.",
+        "**Cheat engine** \u2014 master toggle, FTP instructions, staged cheat browser, and live per-cheat toggles restored to the Settings UI.",
+        "**Sensors page** \u2014 live temperature/clock/fan/storage data at a glance.",
+        "**i18n / Google Translate** \u2014 full language list on all pages; game names preserved as-is from PS5 DB.",
+        "**Supporters** \u2014 \ud83d\ude4f thank-you modal with donor names (Jordy, zecoxao, egycnq, BeLegal, StonedModder, trueicecold, hotshotz, Br0ken4life, Viktorious).",
+        "**Donation wallets** \u2014 BTC, USDC (SPL/SOL), USDT (BNB), Ethereum, XMR/MON."
+      ]
+    },
+    {
+      "version": "1.6.1-offlinepack-2026-05-24",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.1-offlinepack-2026-05-24/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.1-offlinepack-2026-05-24/elf-arsenal.elf",
+      "hash": "b7fc85bc25bcb05d9ad3c94931d173b35e882d737bfec8c14f64569878732e00",
+      "fileSize": 8728416,
+      "releaseDate": "2026-05-24",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "Auto-cut for the offline pack zip. See commit 842119f. Pack contains: kstuff (3 sources), SMP 1.6test11, Linux loader v2.1, Y2JB autoloader, tile pkg, OffAct+PKGInstall, 3 cheat repos, manifest. FTP the zip to /data/elf-arsenal-offline-pack.zip then Settings -> Offline pack -> Extract now."
+      ]
+    },
+    {
+      "version": "1.6.0",
+      "fileName": "elf-arsenal.elf",
+      "filePath": "payloads/aiotools/elf-arsenal/1.6.0/elf-arsenal.elf",
+      "downloadUrl": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.0/elf-arsenal.elf",
+      "hash": "8f492648f76a4741abd0107c112c6499dad5aa19c34224a5e96a9adda8728c4f",
+      "fileSize": 8103248,
+      "releaseDate": "2026-05-22",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "First Elf Arsenal release.",
+        "Rebrand from Sonic Loader",
+        "Baked-in PS5 Linux loader (v2.1) for first-boot install on FW \u2264 6.02",
+        "np-fake-signout payload (preserves username + accountId)",
+        "Background-services JSON fix (toggles hit /api/state now)",
+        "Trophy UDS daemon defaults to OFF; legacy launcher-patch defaults ON",
+        "Auto-apply patches nested into the Cheat engine settings section",
+        "nanoDNS gate on every boot-time HTTP poller",
+        "One-shot sonic-loader.elf -> elf-arsenal.elf migration for upgrading users",
+        "SDK update to v0.39 (clang 19.1.7)"
+      ]
+    }
+  ]
+}

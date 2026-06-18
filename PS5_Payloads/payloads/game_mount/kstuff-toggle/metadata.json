@@ -1,0 +1,25 @@
+{
+  "id": "kstuff-toggle",
+  "displayTitle": "kstuff-toggle",
+  "description": "Kstuff Toggle Beta",
+  "category": "game_mount",
+  "authors": [
+    "EchoStretch",
+    "john-tornblom"
+  ],
+  "projectUrl": "https://github.com/EchoStretch/kstuff-toggle",
+  "sourceType": "direct",
+  "sourceRepo": "EchoStretch/kstuff-toggle",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "Unknown",
+    "url": ""
+  },
+  "supportedFirmwares": [
+    "3.",
+    "4.",
+    "5."
+  ],
+  "versions": []
+}

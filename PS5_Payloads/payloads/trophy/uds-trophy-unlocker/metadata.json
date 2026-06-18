@@ -1,0 +1,21 @@
+{
+  "id": "uds-trophy-unlocker",
+  "displayTitle": "UDS Trophy Unlocker",
+  "description": "Trophy Unlocker (all-FW, single-ELF)",
+  "category": "trophy",
+  "authors": [
+    "soniciso",
+    "arksama"
+  ],
+  "projectUrl": "https://git.etawen.dev/soniciso/uds-trophy-unlocker",
+  "sourceType": "direct",
+  "sourceRepo": "",
+  "forgejoBaseUrl": "",
+  "toPort": 9021,
+  "license": {
+    "type": "GPL-3.0",
+    "url": "https://git.etawen.dev/soniciso/uds-trophy-unlocker"
+  },
+  "supportedFirmwares": [],
+  "versions": []
+}

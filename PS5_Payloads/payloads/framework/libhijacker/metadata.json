@@ -1,0 +1,23 @@
+{
+  "id": "libhijacker",
+  "displayTitle": "libhijacker game-patch",
+  "description": "Patches supported games to run at higher framerates, and adds debug menus to certain titles.",
+  "category": "framework",
+  "authors": [
+    "illusion0001",
+    "astrelsky"
+  ],
+  "projectUrl": "https://github.com/illusion0001/libhijacker",
+  "sourceType": "direct",
+  "sourceRepo": "illusion0001/libhijacker-game-patch",
+  "forgejoBaseUrl": "",
+  "license": {
+    "type": "Unknown",
+    "url": "https://github.com/illusion0001/libhijacker-game-patch/blob/main/LICENSE"
+  },
+  "supportedFirmwares": [
+    "3.",
+    "4."
+  ],
+  "versions": []
+}
