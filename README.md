@@ -12,16 +12,16 @@ This is an unofficial PS5 Repository Source For Payload Manager By ITSPLK from h
 
 You can also add individual categories using these links :
 
-- Activation : https://shark-ps.github.io/PS5PayloadManagerUpdater/activation/payloads.json
-- Aio Tools : https://shark-ps.github.io/PS5PayloadManagerUpdater/aiotools/payloads.json
-- Cheats : https://shark-ps.github.io/PS5PayloadManagerUpdater/cheats/payloads.json
-- Download : https://shark-ps.github.io/PS5PayloadManagerUpdater/download/payloads.json
-- Framework : https://shark-ps.github.io/PS5PayloadManagerUpdater/framework/payloads.json
-- Dump Mount : https://shark-ps.github.io/PS5PayloadManagerUpdater/game_mount/payloads.json
-- HEN_LOADERS : https://shark-ps.github.io/PS5PayloadManagerUpdater/hen_loaders/payloads.json
-- Misc : https://shark-ps.github.io/PS5PayloadManagerUpdater/misc/payloads.json
-- Server : https://shark-ps.github.io/PS5PayloadManagerUpdater/server/payloads.json
-- Trophy : https://shark-ps.github.io/PS5PayloadManagerUpdater/trophy/payloads.json
+- Activation : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/activation/payloads.json
+- Aio Tools : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/aiotools/aiotools.json
+- Cheats : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/cheats/cheats.json
+- Download : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/download/download.json
+- Framework : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/framework/framework.json
+- Dump Mount : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/game_mount/game_mount.json
+- HEN_LOADERS : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/hen_loaders/hen_loaders.json
+- Misc : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/misc/misc.json
+- Server : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/server/server.json
+- Trophy : https://shark-ps.github.io/PS5PayloadManagerUpdater/payloads/trophy/trophy.json
 
 ## Credits
 - [itsPLK](https://github.com/itsPLK/ps5-payload-manager) for all his Payload Management — this repo wouldn't exist without him letting adding 3rd party sources to it
