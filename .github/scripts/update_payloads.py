@@ -1285,7 +1285,7 @@ def main():
         metadata['id'] = payload_id
         metadata['displayTitle'] = payload.get('displayTitle', payload_id)
         metadata['description'] = payload.get('description', '')
-        metadata['category'] = payload_category
+        metadata['category'] = payload.get('category', '')
         metadata['authors'] = payload.get('authors', [])
         metadata['projectUrl'] = payload.get('projectUrl', '')
         metadata['sourceType'] = source_type
@@ -1383,7 +1383,7 @@ def main():
                         'id': payload_id,
                         'displayTitle': orphan_meta.get('displayTitle', payload_id),
                         'description': orphan_meta.get('description', ''),
-                        'category': payload_category,
+                        'category': orphan_meta.get('category', ''),
                         'authors': orphan_meta.get('authors', []),
                         'projectUrl': orphan_meta.get('projectUrl', ''),
                         'sourceType': orphan_meta.get('sourceType', 'direct'),
