@@ -13,15 +13,15 @@ This is an unofficial PS5 Repository Source For Payload Manager By ITSPLK from h
 You can also add individual categories using these links :
 
 - Activation : https://shark-ps.github.io/PS5PayloadManagerUpdater/activation/payloads.json
-- AIOTOOLS : https://shark-ps.github.io/PS5PayloadManagerUpdater/aiotools/payloads.json
-- CHEATS : https://shark-ps.github.io/PS5PayloadManagerUpdater/cheats/payloads.json
-- DOWNLOAD : https://shark-ps.github.io/PS5PayloadManagerUpdater/download/payloads.json
-- FRAMEWORK : https://shark-ps.github.io/PS5PayloadManagerUpdater/framework/payloads.json
-- GAME_MOUNT : https://shark-ps.github.io/PS5PayloadManagerUpdater/game_mount/payloads.json
+- Aio Tools : https://shark-ps.github.io/PS5PayloadManagerUpdater/aiotools/payloads.json
+- Cheats : https://shark-ps.github.io/PS5PayloadManagerUpdater/cheats/payloads.json
+- Download : https://shark-ps.github.io/PS5PayloadManagerUpdater/download/payloads.json
+- Framework : https://shark-ps.github.io/PS5PayloadManagerUpdater/framework/payloads.json
+- Dump Mount : https://shark-ps.github.io/PS5PayloadManagerUpdater/game_mount/payloads.json
 - HEN_LOADERS : https://shark-ps.github.io/PS5PayloadManagerUpdater/hen_loaders/payloads.json
-- MISC : https://shark-ps.github.io/PS5PayloadManagerUpdater/misc/payloads.json
-- SERVER : https://shark-ps.github.io/PS5PayloadManagerUpdater/server/payloads.json
-- TROPHY : https://shark-ps.github.io/PS5PayloadManagerUpdater/trophy/payloads.json
+- Misc : https://shark-ps.github.io/PS5PayloadManagerUpdater/misc/payloads.json
+- Server : https://shark-ps.github.io/PS5PayloadManagerUpdater/server/payloads.json
+- Trophy : https://shark-ps.github.io/PS5PayloadManagerUpdater/trophy/payloads.json
 
 ## Credits
 - [itsPLK](https://github.com/itsPLK/ps5-payload-manager) for all his Payload Management — this repo wouldn't exist without him letting adding 3rd party sources to it
