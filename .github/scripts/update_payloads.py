@@ -1091,7 +1091,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
     
     return versions
 
-def load_metadata(payload_config: Dict, payload_id: str) -> Dict:
+def load_metadata(payload_id: str, payload_config: Dict,) -> Dict:
     """Load existing metadata.json for a payload."""
     payload_category = payload_config['category']
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
