@@ -249,7 +249,6 @@ PAYLOAD_MAP_FILE = REPO_ROOT / "PS5_Payloads" / "payload_map.js"
 PAYLOAD_CONFIG_FILE = REPO_ROOT / ".github" / "payloads.yaml"
 
 MAX_VERSIONS_PER_PAYLOAD = 999  # Effectively unlimited - fetch all available versions
-CUSTOM_ACTION_APPCACHE_REMOVE = "appcache-remove"
 
 # Version author patterns for license detection
 AUTHOR_PATTERNS = {
@@ -1092,7 +1091,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
     
     return versions
 
-def load_metadata(payload_id: str) -> Dict:
+def load_metadata(payload_category: str, payload_id: str) -> Dict:
     """Load existing metadata.json for a payload."""
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
     if metadata_path.exists():
@@ -1112,7 +1111,7 @@ def json_serial(obj):
 
 
 
-def save_metadata(payload_id: str, metadata: Dict):
+def save_metadata(payload_category: str, payload_id: str, metadata: Dict):
     """Save metadata.json for a payload."""
     print(f"  Saving metadata: {PAYLOADS_DIR / payload_category / payload_id / 'metadata.json'}")
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
