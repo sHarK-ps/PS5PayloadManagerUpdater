@@ -10,9 +10,9 @@ on:
         required: false
         default: 'false'
         type: boolean
-  # Twice daily: 00:00 and 12:00 UTC
+  # Runs every hour
   schedule:
-    - cron: '0 * * * *'    # 00:00 & 12:00 UTC
+    - cron: '0 * * * *'    # Every Hour
 
 permissions:
   contents: write
