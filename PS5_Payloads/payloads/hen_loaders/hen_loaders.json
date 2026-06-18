@@ -2,7 +2,6 @@
   "name": "hen_loaders payloads",
   "payloads": [
     {
-      "category": "hen_loaders",
       "name": "Byepervisor HEN",
       "filename": "byepervisor.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/byepervisor/1.1/byepervisor.elf",
@@ -11,7 +10,6 @@
       "checksum": "f913ba96bf87561bcc22f1391d2ad58515b3ed0a9e5199d63dbbd9125ec3c317"
     },
     {
-      "category": "hen_loaders",
       "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/etahen/2.5B/etaHEN-2.5B.bin",
@@ -20,7 +18,6 @@
       "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e"
     },
     {
-      "category": "hen_loaders",
       "name": "ps5-hen",
       "filename": "ps5-hen.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/ps5-hen/dev-latest/ps5-hen.elf",

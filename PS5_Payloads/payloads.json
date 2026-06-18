@@ -2,8 +2,7 @@
   "name": "PS5 Payload Manager Updater (Unofficial)",
   "payloads": [
     {
-      "category": "activation",
-      "name": "No Fake SignIn",
+      "name": "NP Fake SignIn",
       "filename": "np-fake-signin-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/activation/np-fake-signin/1.3/np-fake-signin-ps5.elf",
       "description": "ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state",
@@ -11,7 +10,6 @@
       "checksum": "f5c66fcb9e3f512e5463a7123d819b87f063d9955639366fa7ad26a2f0abefa4"
     },
     {
-      "category": "aiotools",
       "name": "elf-arsenal (SonicIso)",
       "filename": "elf-arsenal.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/aiotools/elf-arsenal/1.6.19/elf-arsenal.elf",
@@ -20,7 +18,6 @@
       "checksum": "888d50c7661afbac5822e51c40d47cdbd3c7c05407c3f256ccd600c66042d9cd"
     },
     {
-      "category": "cheats",
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/cheats/cheatrunner/0.13/CheatRunner.elf",
@@ -29,7 +26,6 @@
       "checksum": "0490d46c0ae8d3029106551f588ca9479f32df485678eb73c29685ad3072090b"
     },
     {
-      "category": "download",
       "name": "Pegasus-DL",
       "filename": "pegasus_dl.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.4.0/pegasus_dl.elf",
@@ -38,7 +34,6 @@
       "checksum": "3e2731fba643b7f303a6a6dc2092edf3bca213cc44d73463c9f74d3887c7bc09"
     },
     {
-      "category": "download",
       "name": "Spectrum Library",
       "filename": "SpectrumLibrary_1.4.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",
@@ -47,7 +42,6 @@
       "checksum": "de2a7b8c192fc4f2d3c2210123d662a0a2e09998e2000fa064ca969ac72d427d"
     },
     {
-      "category": "game_mount",
       "name": "BackPork",
       "filename": "ps5-backpork.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/backpork/0.1/ps5-backpork.elf",
@@ -56,7 +50,6 @@
       "checksum": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52"
     },
     {
-      "category": "game_mount",
       "name": "ShadowMountPlus",
       "filename": "shadowmountplus.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/shadowmountplus/1.6test15-fix2/shadowmountplus.elf",
@@ -65,7 +58,6 @@
       "checksum": "8ab32f4cede840a73515c05697fe81759bc98cf41fc22b43e09943262f447e99"
     },
     {
-      "category": "game_mount",
       "name": "kstuff-lite (drakmor fork)",
       "filename": "kstuff.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/kstuff-lite/1.2-dr-test2/kstuff.elf",
@@ -74,7 +66,6 @@
       "checksum": "2b699d411079a21dba7c39a02993fc0fb21e52f434103e884a0c892fafe56b75"
     },
     {
-      "category": "game_mount",
       "name": "ps5-kstuff (EchoStretch fork)",
       "filename": "kstuff.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/kstuff-echostretch/1.6.7/kstuff.elf",
@@ -83,7 +74,6 @@
       "checksum": "f1c1f4b2b6395644af04cbe9828aba58586acf7aacb9e01113cac92ce16e3569"
     },
     {
-      "category": "hen_loaders",
       "name": "Byepervisor HEN",
       "filename": "byepervisor.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/byepervisor/1.1/byepervisor.elf",
@@ -92,7 +82,6 @@
       "checksum": "f913ba96bf87561bcc22f1391d2ad58515b3ed0a9e5199d63dbbd9125ec3c317"
     },
     {
-      "category": "hen_loaders",
       "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/etahen/2.5B/etaHEN-2.5B.bin",
@@ -101,7 +90,6 @@
       "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e"
     },
     {
-      "category": "hen_loaders",
       "name": "ps5-hen",
       "filename": "ps5-hen.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/hen_loaders/ps5-hen/dev-latest/ps5-hen.elf",
@@ -110,7 +98,6 @@
       "checksum": "754f2c45d5ba60ec3a1d27cc74bbde876e4a1fde37b9bcb034cf68ef410494aa"
     },
     {
-      "category": "misc",
       "name": "ps5-remoteplay-get-pin",
       "filename": "rp-get-pin.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/rp-get-pin/0.1.1/rp-get-pin.elf",
@@ -119,7 +106,6 @@
       "checksum": "1d611c1856dd2f4b4b6cb42ead1128a7f08a26585788f92de79fa4f67d721472"
     },
     {
-      "category": "misc",
       "name": "ps5-versions",
       "filename": "ps5-versions.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/ps5-versions/1.0/ps5-versions.elf",
@@ -128,7 +114,6 @@
       "checksum": "4df615bf70ad51d977f4f2898ae23b7c7349d32afe0e37783d8b62aedd7700be"
     },
     {
-      "category": "misc",
       "name": "ps5debug",
       "filename": "ps5debug.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/misc/ps5debug-dizz/0.0.1-r2/ps5debug.elf",
@@ -137,7 +122,6 @@
       "checksum": "550885996e8e44b050b8bbfabd3e4740076065da1d3468d4798ddbbc22370a2f"
     },
     {
-      "category": "server",
       "name": "Chukei-DNS",
       "filename": "chukei-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/chukei-dns/0.9.0/chukei-ps5.elf",
@@ -146,7 +130,6 @@
       "checksum": "0cf13e1ed87b57ffa4fdcfca5d9afe1572be29b4f632677cedf17657a972d750"
     },
     {
-      "category": "server",
       "name": "ELF Loader",
       "filename": "elfldr-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/elfldr/0.23/elfldr-ps5.elf",
@@ -155,7 +138,6 @@
       "checksum": "092d16ee0ede0c494947efd38d1a17bbd7cc4b022d3858ea898833c188c703e8"
     },
     {
-      "category": "server",
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5-install.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/ftpsrv/0.20/ftpsrv-ps5-install.elf",
@@ -164,7 +146,6 @@
       "checksum": "23f69de0f1ab1e1a3869473e87a271f750ec595056df0142fabbf21f5153c077"
     },
     {
-      "category": "server",
       "name": "gdbsrv",
       "filename": "gdbsrv-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/gdbsrv/0.8/gdbsrv-ps5.elf",
@@ -173,7 +154,6 @@
       "checksum": "7621b829bd8b6d6f3d2328fa12c16af956b0ca128250f92a91eddc100c87f208"
     },
     {
-      "category": "server",
       "name": "klogsrv",
       "filename": "klogsrv-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/klogsrv/0.8/klogsrv-ps5.elf",
@@ -182,7 +162,6 @@
       "checksum": "f6eb1b415ecf3340b89a56a0cb04ba5c714430085851ada13a98012b63a5a4cf"
     },
     {
-      "category": "server",
       "name": "shsrv",
       "filename": "shsrv-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/shsrv/0.18.2/shsrv-ps5.elf",
@@ -191,7 +170,6 @@
       "checksum": "990f7fbcf3761f97db9b97638d3e119352447fb904b2cf70b191c02289e1c69e"
     },
     {
-      "category": "server",
       "name": "websrv",
       "filename": "websrv-ps5.elf",
       "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.32/websrv-ps5.elf",
