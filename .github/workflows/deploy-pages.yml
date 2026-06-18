@@ -126,7 +126,7 @@ jobs:
 
               jq -n \
                 --arg name "$CATEGORY_NAME payloads" \
-                --argjson payloads "$(jq 'sort_by(.name)' "$CATEGORY_FILE")" \
+                --argjson payloads "$(jq 'sort_by(.name) | map(del(.category))' "$CATEGORY_FILE")" \
                 '{name: $name, payloads: $payloads}' \
                 > "$CATEGORY_DIR/$SAFE_CATEGORY.json"
 
@@ -136,7 +136,7 @@ jobs:
 
           jq -n \
             --arg name "PS5 Payload Manager Updater (Unofficial)" \
-            --argjson payloads "$(jq 'sort_by(.category, .name)' <<< "$ALL_PAYLOADS")" \
+            --argjson payloads "$(jq 'sort_by(.category, .name) | map(del(.category))' <<< "$ALL_PAYLOADS")" \
             '{name: $name, payloads: $payloads}' \
             > "$GLOBAL_FILE"
 
