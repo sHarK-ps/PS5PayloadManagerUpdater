@@ -1111,7 +1111,7 @@ def json_serial(obj):
 
 
 
-def save_metadata(payload_dategory: str, payload_id: str, metadata: Dict):
+def save_metadata(payload_category: str, payload_id: str, metadata: Dict):
     """Save metadata.json for a payload."""
     print(f"  Saving metadata: {PAYLOADS_DIR / payload_category / payload_id / 'metadata.json'}")
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
@@ -1348,7 +1348,7 @@ def main():
             print("  Keeping existing metadata skeleton / previous versions")
 
         # Always save metadata, even if release detection failed
-        save_metadata(payload_id, metadata)
+        save_metadata(payload_category, payload_id, metadata)
 
         # Keep payload object in sync for payload_map generation
         payload['versions'] = metadata.get('versions', [])
