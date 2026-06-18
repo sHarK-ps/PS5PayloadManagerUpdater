@@ -1091,9 +1091,8 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
     
     return versions
 
-def load_metadata(payload_id: str) -> Dict:
+def load_metadata(payload_id: str, payload_category: str) -> Dict:
     """Load existing metadata.json for a payload."""
-    payload_category = PAYLOAD_CONFIG[payload_id]['category']
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
     if metadata_path.exists():
         try:
@@ -1112,11 +1111,10 @@ def json_serial(obj):
 
 
 
-def save_metadata(payload_id: str, metadata: Dict):
+def save_metadata(payload_category: str, payload_id: str, metadata: Dict):
     """Save metadata.json for a payload."""
-    payload_category = PAYLOAD_CONFIG[payload_id]['category']
-    print(f"  Saving metadata: {PAYLOADS_DIR / payload_id['category'] / payload_id / 'metadata.json'}")
     metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
+    print(f"  Saving metadata: {metadata_path}")
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     with open(metadata_path, 'w') as f:
         json.dump(metadata, f, indent=2, default=json_serial)
@@ -1184,7 +1182,7 @@ def generate_payload_map_js(payloads_config: List[Dict]) -> str:
     lines.append("const payload_map = [")
 
     for payload in payloads_config:
-        metadata = load_metadata(payload['id']) or {}
+        metadata = load_metadata(payload['id'], payload['category']) or {}
 
         # Fallback to payload values if metadata.json is missing or incomplete
         license_info = metadata.get('license') or payload.get('license') or {"type": "Unknown", "url": ""}
@@ -1279,7 +1277,7 @@ def main():
         print(f"\nProcessing: {payload['displayTitle']} ({payload_id}) [{source_type}]")
 
         # Load existing metadata
-        metadata = load_metadata(payload_id) or {}
+        metadata = load_metadata(payload_id, payload_category) or {}
 
         # Always populate top-level metadata FIRST
         metadata['id'] = payload_id
