@@ -1094,7 +1094,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
 def load_metadata(payload_id: str) -> Dict:
     """Load existing metadata.json for a payload."""
 
-    metadata_path = PAYLOADS_DIR / {payload_id['category']} / payload_id / "metadata.json"
+    metadata_path = PAYLOADS_DIR / payload_id['category'] / payload_id / "metadata.json"
     if metadata_path.exists():
         try:
             with open(metadata_path, 'r') as f:
@@ -1114,8 +1114,8 @@ def json_serial(obj):
 
 def save_metadata(payload_id: str, metadata: Dict):
     """Save metadata.json for a payload."""
-    print(f"  Saving metadata: {PAYLOADS_DIR / {payload_id['category']} / payload_id / 'metadata.json'}")
-    metadata_path = PAYLOADS_DIR / {payload_id['category']} / payload_id / "metadata.json"
+    print(f"  Saving metadata: {PAYLOADS_DIR / payload_id['category'] / payload_id / 'metadata.json'}")
+    metadata_path = PAYLOADS_DIR / payload_id['category'] / payload_id / "metadata.json"
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     with open(metadata_path, 'w') as f:
         json.dump(metadata, f, indent=2, default=json_serial)
