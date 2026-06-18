@@ -31,8 +31,8 @@ downloads latest payload binaries, generates metadata, and produces PS5_Payloads
    └─ Generate consolidated payload_map.js
 
 3. Output Files
-   ├─ PS5_Payloads/payloads/{payload_id}/metadata.json
-   ├─ PS5_Payloads/payloads/{payload_id}/{version}/{binary_file}
+   ├─ PS5_Payloads/payloads/{category}/{payload_id}/metadata.json
+   ├─ PS5_Payloads/payloads/{category}/{payload_id}/{version}/{binary_file}
    └─ PS5_Payloads/payload_map.js
 
 ============================================================================
@@ -47,6 +47,7 @@ Add to .github/payloads.yaml:
   - id: my-payload              # Unique identifier (lowercase, hyphens)
     displayTitle: My Payload     # Display name in UI
     description: Does something  # Short description
+    category: category of the payload
     authors:                     # List of contributors
       - your-github-username
     projectUrl: https://github.com/username/repo
@@ -78,6 +79,7 @@ Add to .github/payloads.yaml:
   - id: my-payload              # Unique identifier (lowercase, hyphens)
     displayTitle: My Payload     # Display name in UI
     description: Does something  # Short description
+    category: category of the payload
     authors:                     # List of contributors
       - your-github-username
     projectUrl: https:///git.etawen.dev/username/repo
@@ -113,6 +115,7 @@ Use this when:
   - id: my-payload
     displayTitle: My Payload
     description: Does something
+    category: category of the payload
     authors:
       - your-github-username
     projectUrl: https://github.com/username/repo
@@ -140,6 +143,7 @@ For browser-based actions:
   - id: my-action
     displayTitle: My Action
     description: Does something in browser
+    category: category of the payload
     authors:
       - your-github-username
     projectUrl: https://github.com/username/repo
@@ -729,6 +733,7 @@ def update_payload_from_github_release(payload_config: Dict, metadata: Dict) -> 
     repo = payload_config['sourceRepo']
     pattern = payload_config.get('sourcePattern', '*.elf')
     payload_id = payload_config['id']
+    payload_category = payload_config['category']
     versions = []
     
     # Preserve existing versions from metadata to prevent data loss
@@ -785,7 +790,7 @@ def update_payload_from_github_release(payload_config: Dict, metadata: Dict) -> 
             download_url = f"https://github.com/{repo}/releases/download/{tag}/{file_name}"
 
         # Create version directory
-        version_dir = PAYLOADS_DIR / payload_id / version
+        version_dir = PAYLOADS_DIR / payload_category / payload_id / version
         version_dir.mkdir(parents=True, exist_ok=True)
         
         dest_path = version_dir / file_name
@@ -834,7 +839,7 @@ def update_payload_from_github_release(payload_config: Dict, metadata: Dict) -> 
         versions.append({
             'version': version,
             'fileName': file_name,
-            'filePath': f"payloads/{payload_id}/{version}/{file_name}",
+            'filePath': f"payloads/{payload_category}/{payload_id}/{version}/{file_name}",
             'downloadUrl': download_url,
             'hash': file_hash,
             'fileSize': file_size,
@@ -851,7 +856,7 @@ def update_payload_from_github_release(payload_config: Dict, metadata: Dict) -> 
         if ver_key not in seen_versions:
             # Check if the binary still exists on disk
             ver_file = ver_data.get('fileName', '')
-            ver_path = PAYLOADS_DIR / payload_id / ver_key / ver_file
+            ver_path = PAYLOADS_DIR / payload_category / payload_id / ver_key / ver_file
             if ver_file and ver_path.exists():
                 print(f"  Preserving orphaned version (not in GitHub releases): {ver_key}")
                 versions.append(ver_data)
@@ -879,6 +884,7 @@ def update_payload_from_forgejo_release(payload_config: Dict, metadata: Dict) ->
     repo = payload_config["sourceRepo"]
     pattern = payload_config.get("sourcePattern", "*.elf")
     payload_id = payload_config["id"]
+    payload_category = payload_config['category']
     versions = []
 
     existing_versions = {v["version"]: v for v in metadata.get("versions", [])}
@@ -931,7 +937,7 @@ def update_payload_from_forgejo_release(payload_config: Dict, metadata: Dict) ->
             or f"{get_forgejo_base_url(payload_config)}/{repo}/releases/download/{tag}/{file_name}"
         )
 
-        version_dir = PAYLOADS_DIR / payload_id / version
+        version_dir = PAYLOADS_DIR / payload_category / payload_id / version
         version_dir.mkdir(parents=True, exist_ok=True)
 
         dest_path = version_dir / file_name
@@ -970,7 +976,7 @@ def update_payload_from_forgejo_release(payload_config: Dict, metadata: Dict) ->
         versions.append({
             "version": version,
             "fileName": file_name,
-            "filePath": f"payloads/{payload_id}/{version}/{file_name}",
+            "filePath": f"payloads/{payload_category}/{payload_id}/{version}/{file_name}",
             "downloadUrl": download_url,
             "hash": file_hash,
             "fileSize": file_size,
@@ -985,7 +991,7 @@ def update_payload_from_forgejo_release(payload_config: Dict, metadata: Dict) ->
     for ver_key, ver_data in existing_versions.items():
         if ver_key not in seen_versions:
             ver_file = ver_data.get("fileName", "")
-            ver_path = PAYLOADS_DIR / payload_id / ver_key / ver_file
+            ver_path = PAYLOADS_DIR / payload_category / payload_id / ver_key / ver_file
             if ver_file and ver_path.exists():
                 print(f"  Preserving orphaned version (not in Forgejo releases): {ver_key}")
                 versions.append(ver_data)
@@ -1028,7 +1034,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
             continue
 
         # Create version directory
-        version_dir = PAYLOADS_DIR / payload_config['id'] / version
+        version_dir = PAYLOADS_DIR / payload_config['category'] / payload_config['id'] / version
         version_dir.mkdir(parents=True, exist_ok=True)
         
         dest_path = version_dir / file_name
@@ -1040,7 +1046,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
             versions.append({
                 'version': version,
                 'fileName': file_name,
-                'filePath': f"payloads/{payload_config['id']}/{version}/{file_name}",
+                'filePath': f"payloads/{payload_config['category']}/{payload_config['id']}/{version}/{file_name}",
                 'downloadUrl': download_url,
                 'hash': existing_hash,
                 'fileSize': existing_size,
@@ -1055,7 +1061,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
                 versions.append({
                     'version': version,
                     'fileName': file_name,
-                    'filePath': f"payloads/{payload_config['id']}/{version}/{file_name}",
+                    'filePath': f"payloads/{payload_config['category']}/{payload_config['id']}/{version}/{file_name}",
                     'downloadUrl': download_url,
                     'hash': file_hash,
                     'fileSize': file_size,
@@ -1088,7 +1094,7 @@ def update_payload_from_direct(payload_config: Dict, metadata: Dict) -> List[Dic
 
 def load_metadata(payload_id: str) -> Dict:
     """Load existing metadata.json for a payload."""
-    metadata_path = PAYLOADS_DIR / payload_id / "metadata.json"
+    metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
     if metadata_path.exists():
         try:
             with open(metadata_path, 'r') as f:
@@ -1108,8 +1114,8 @@ def json_serial(obj):
 
 def save_metadata(payload_id: str, metadata: Dict):
     """Save metadata.json for a payload."""
-    print(f"  Saving metadata: {PAYLOADS_DIR / payload_id / 'metadata.json'}")
-    metadata_path = PAYLOADS_DIR / payload_id / "metadata.json"
+    print(f"  Saving metadata: {PAYLOADS_DIR / payload_category / payload_id / 'metadata.json'}")
+    metadata_path = PAYLOADS_DIR / payload_category / payload_id / "metadata.json"
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     with open(metadata_path, 'w') as f:
         json.dump(metadata, f, indent=2, default=json_serial)
@@ -1123,7 +1129,7 @@ def generate_payload_map_js(payloads_config: List[Dict]) -> str:
     lines.append(f"// Auto-generated by update_payloads.py on {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
     lines.append("// Do not edit manually - changes will be overwritten by GitHub Actions")
     lines.append("")
-    lines.append(f'const CUSTOM_ACTION_APPCACHE_REMOVE = "{CUSTOM_ACTION_APPCACHE_REMOVE}";')
+    # lines.append(f'const CUSTOM_ACTION_APPCACHE_REMOVE = "{CUSTOM_ACTION_APPCACHE_REMOVE}";')
     lines.append("")
 
     # Type definitions
@@ -1266,6 +1272,7 @@ def main():
 
     for payload in config['payloads']:
         payload_id = payload['id']
+        payload_category = payload['category']
         source_type = payload.get('sourceType', 'direct')
 
         print(f"\nProcessing: {payload['displayTitle']} ({payload_id}) [{source_type}]")
@@ -1277,6 +1284,7 @@ def main():
         metadata['id'] = payload_id
         metadata['displayTitle'] = payload.get('displayTitle', payload_id)
         metadata['description'] = payload.get('description', '')
+        metadata['category'] = payload_category
         metadata['authors'] = payload.get('authors', [])
         metadata['projectUrl'] = payload.get('projectUrl', '')
         metadata['sourceType'] = source_type
@@ -1374,6 +1382,7 @@ def main():
                         'id': payload_id,
                         'displayTitle': orphan_meta.get('displayTitle', payload_id),
                         'description': orphan_meta.get('description', ''),
+                        'category': payload_category,
                         'authors': orphan_meta.get('authors', []),
                         'projectUrl': orphan_meta.get('projectUrl', ''),
                         'sourceType': orphan_meta.get('sourceType', 'direct'),
