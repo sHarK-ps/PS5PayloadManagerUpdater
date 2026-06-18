@@ -9,6 +9,7 @@
 #   id:                Unique identifier (lowercase, hyphens). Used as directory name.
 #   displayTitle:      Human-readable name shown in the UI
 #   description:       Short description shown in the UI
+#   category:          Category of the payload (ex: cheats, homebrew, loader...)
 #   authors:           List of GitHub usernames of contributors
 #   projectUrl:        URL to the project's GitHub page
 #   sourceType:        'github-release' | 'direct' | 'custom'
@@ -40,6 +41,7 @@ payloads:
   - id: etahen
     displayTitle: etaHEN
     description: AIO HEN
+    category: hen_loaders
     authors:
       - LightningMods
       - Buzzer
@@ -64,6 +66,7 @@ payloads:
   - id: websrv
     displayTitle: websrv
     description: Custom homebrew loader. Runs on port 8080.
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/websrv
@@ -80,6 +83,7 @@ payloads:
   - id: ftpsrv
     displayTitle: ftpsrv
     description: FTP server. Runs on port 2121.
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/ftpsrv
@@ -96,6 +100,7 @@ payloads:
   - id: gdbsrv
     displayTitle: gdbsrv
     description: GDB server. Runs on port 2159.
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/gdbsrv
@@ -112,6 +117,7 @@ payloads:
   - id: klogsrv
     displayTitle: klogsrv
     description: Klog server. Runs on port 3232.
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/klogsrv
@@ -128,6 +134,7 @@ payloads:
   - id: shsrv
     displayTitle: shsrv
     description: Telnet shell server. Runs on port 2323.
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/shsrv
@@ -146,6 +153,7 @@ payloads:
   - id: elfldr
     displayTitle: ELF Loader
     description: ELF loader
+    category: server
     authors:
       - john-tornblom
     projectUrl: https://github.com/ps5-payload-dev/elfldr
@@ -162,6 +170,7 @@ payloads:
   - id: byepervisor
     displayTitle: Byepervisor HEN
     description: FPKG enabler
+    category: hen_loaders
     authors:
       - SpecterDev
       - ChendoChap
@@ -189,6 +198,7 @@ payloads:
   - id: ps5debug-dizz
     displayTitle: ps5debug
     description: Debugger, open source version by DizzRL
+    category: misc
     authors:
       - Dizz
       - astrelsky
@@ -210,6 +220,7 @@ payloads:
   - id: ps5-versions
     displayTitle: ps5-versions
     description: Shows kernel build, os and sdk versions
+    category: misc
     authors:
       - SiSTRo
     projectUrl: https://github.com/SiSTR0/ps5-versions
@@ -225,6 +236,7 @@ payloads:
   - id: rp-get-pin
     displayTitle: ps5-remoteplay-get-pin
     description: Get Remote Play PIN for offline activated users. Send again to cancel.
+    category: misc
     authors:
       - idlesauce
     projectUrl: https://github.com/idlesauce/ps5-remoteplay-get-pin
@@ -243,6 +255,7 @@ payloads:
   - id: shadowmountplus
     displayTitle: ShadowMountPlus
     description: Automatic game image mounter - Mount .ffpkg, .exfat, and .ffpfs images automatically without manual intervention
+    category: game_mount
     authors:
       - drakmor
       - VoidWhisper
@@ -267,6 +280,7 @@ payloads:
   - id: backpork
     displayTitle: BackPork
     description: Background payload for sideloading system libraries into PS5 games
+    category: game_mount
     authors:
       - BestPig
     projectUrl: https://github.com/BestPig/BackPork
@@ -285,6 +299,7 @@ payloads:
   - id: kstuff-lite
     displayTitle: kstuff-lite (drakmor fork)
     description: FPKG enabler - Performance optimized fork with 1.5-2x speed improvement
+    category: game_mount
     authors:
       - drakmor
       - sleirsgoevy
@@ -311,6 +326,7 @@ payloads:
   - id: kstuff-lite-1200-only
     displayTitle: kstuff-lite (FW 12.00 only)
     description: FPKG enabler optimized for FW 12.00 only - Hidden from UI to prevent crashes on lower firmware
+    category: game_mount
     authors:
       - drakmor
       - sleirsgoevy
@@ -343,6 +359,7 @@ payloads:
   - id: cheatrunner
     displayTitle: CheatRunner
     description: CheatRunner is a PS5 web launcher and cheat trainer for already-jailbroken PS5 consoles.
+    category: cheats
     authors:
       - notmaj0r
     projectUrl: https://github.com/notmaj0r/CheatRunner
@@ -362,6 +379,7 @@ payloads:
   - id: np-fake-signin
     displayTitle: No Fake SignIn 
     description: ELF payload for PS4/PS5 that fakes PSN sign-in for the foreground user by writing NP files and patching registry/ShellCore state
+    category: activation
     authors:
       - earthonion
     projectUrl: https://git.etawen.dev/earthonion/np-fake-signin
@@ -380,6 +398,7 @@ payloads:
   - id: chukei-dns
     displayTitle: Chukei-DNS
     description: Chukei DNS is a lightweight DNS relay server. It provides DNS-over-HTTPS (DoH) functionality to bypass DNS hijacking by ISPs and other network intermediaries while offering domain filtering capabilities to block unwanted connections like system updates and telemetry.
+    category: server
     authors:
       - Al Azif
     projectUrl: https://github.com/Al-Azif/chukei-dns
@@ -397,6 +416,7 @@ payloads:
   - id: pegasus-dl
     displayTitle: Pegasus-DL
     description: Direct package downloading from your PS5, managed through a local web interface.
+    category: download
     authors:
       - pegasus-ps5
     projectUrl: https://github.com/pegasus-ps5/pegasus-dl
@@ -414,6 +434,7 @@ payloads:
   - id: spectrum-library
     displayTitle: Spectrum Library
     description: lightweight content manager designed to organize and deliver supported game files
+    category: download
     authors:
       - Phoenixx1202
     projectUrl: https://github.com/Phoenixx1202/Spectrum-Library
@@ -441,6 +462,7 @@ payloads:
   - id: kstuff-echostretch
     displayTitle: ps5-kstuff (EchoStretch fork)
     description: FPKG enabler - Community fork with additional patches
+    category: game_mount
     authors:
       - EchoStretch
       - sleirsgoevy
@@ -466,6 +488,7 @@ payloads:
   - id: kstuff
     displayTitle: ps5-kstuff
     description: FPKG enabler
+    category: game_mount
     authors:
       - sleirsgoevy
       - john-tornblom
@@ -498,6 +521,7 @@ payloads:
   - id: kstuff-toggle
     displayTitle: kstuff-toggle
     description: Kstuff Toggle Beta
+    category: game_mount
     authors:
       - EchoStretch
       - john-tornblom
@@ -525,6 +549,7 @@ payloads:
   - id: libhijacker
     displayTitle: libhijacker game-patch
     description: Patches supported games to run at higher framerates, and adds debug menus to certain titles.
+    category: framework
     authors:
       - illusion0001
       - astrelsky
@@ -551,6 +576,7 @@ payloads:
   - id: ps5debug
     displayTitle: ps5debug
     description: Debugger
+    category: misc
     authors:
       - SiSTR0
       - ctn123
@@ -574,6 +600,7 @@ payloads:
   - id: ps5-hen
     displayTitle: ps5-hen
     description: HEN - Defeats the Hypervisor and enables homebrew and PS4 FPKG support
+    category: hen_loaders
     authors:
       - cragson
     projectUrl: https://github.com/cragson/ps5-hen
@@ -592,6 +619,7 @@ payloads:
   - id: voidshell
     displayTitle: VoidShell
     description: Comprehensive PS5 homebrew dashboard with WebUI - System monitor, file manager, package installer, payload manager, Sentinel Warden, cheats support, app dumper, and save tools (Port 7007)
+    category: aiotools
     authors:
       - VoidWhisper
     projectUrl: https://ko-fi.com/voidwhisper
@@ -625,6 +653,7 @@ payloads:
   - id: elf-arsenal
     displayTitle: elf-arsenal (SonicIso)
     description: Web-based PS5 management dashboard - launch games, cheats, install homebrew and PKGs, file transfer, fan control, and offline account activation. Self-contained with bundled Lapy JB Daemon (no etaHEN needed). WebUI on port 6969.
+    category: aiotools
     authors:
       - soniciso
     projectUrl: https://git.etawen.dev/soniciso/elf-arsenal
@@ -640,6 +669,7 @@ payloads:
   - id: uds-trophy-unlocker
     displayTitle: UDS Trophy Unlocker
     description: Trophy Unlocker (all-FW, single-ELF)
+    category: trophy
     authors:
       - soniciso
       - arksama
