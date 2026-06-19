@@ -1,6 +1,9 @@
 name: Deploy to Github Pages
 
 on:
+  # Runs every hour
+  schedule:
+    - cron: '0 * * * *'    # Every Hour
   push:
     branches: ["main"]
   workflow_dispatch:
@@ -8,12 +11,8 @@ on:
       force_payload_update:
         description: 'Force payload update even if no changes'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
-  # Runs every hour
-  schedule:
-    - cron: '0 * * * *'    # Every Hour
-
 permissions:
   contents: write
   pages: write
