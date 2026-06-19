@@ -4,18 +4,18 @@
     {
       "name": "Pegasus-DL",
       "filename": "pegasus_dl.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.4.0/pegasus_dl.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.5.0/pegasus_dl.elf",
       "description": "Direct package downloading from your PS5, managed through a local web interface.",
-      "version": "1.4.0",
-      "checksum": "3e2731fba643b7f303a6a6dc2092edf3bca213cc44d73463c9f74d3887c7bc09"
+      "version": "1.5.0",
+      "checksum": "d48b96e93a5d47324bd1adc79ae834009c297fdb5759a136552158ef5e2a1ab6"
     },
     {
       "name": "Spectrum Library",
-      "filename": "SpectrumLibrary_1.4.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",
+      "filename": "SpectrumLibrary_1.4.1.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/1.4.1/SpectrumLibrary_1.4.1.elf",
       "description": "lightweight content manager designed to organize and deliver supported game files",
-      "version": "SpectrumLibrary_1.4",
-      "checksum": "de2a7b8c192fc4f2d3c2210123d662a0a2e09998e2000fa064ca969ac72d427d"
+      "version": "1.4.1",
+      "checksum": "2a0c96c74d0b36a34bd8424ba92a173775ef54a3878f4d05d1772bc4061394b7"
     }
   ]
 }

@@ -18,6 +18,51 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.1",
+      "fileName": "SpectrumLibrary_1.4.1.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.1/SpectrumLibrary_1.4.1.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.1/SpectrumLibrary_1.4.1.elf",
+      "hash": "2a0c96c74d0b36a34bd8424ba92a173775ef54a3878f4d05d1772bc4061394b7",
+      "fileSize": 5098792,
+      "releaseDate": "2026-06-19",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "<img width=\"1918\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/80c6ed2d-d938-4f06-a18d-8337342c47b2\" />",
+        "This update focuses on UI refinement, smoother navigation, better queue behavior, and internal stability improvements.",
+        "Reworked the main layout with a cleaner top navigation.",
+        "Moved Library, Settings, and Queue into dedicated tabs.",
+        "Moved search, sorting, and refresh controls to the top bar for better screen usage.",
+        "Improved queue behavior and user feedback.",
+        "Added local cover caching to reduce repeated image downloads and improve browsing performance.",
+        "Added internal fixes for version handling, status labels, and UI consistency.",
+        "Removed duplicated library header text from the main content area.",
+        "Reorganized the interface into clearer sections:"
+      ]
+    },
+    {
+      "version": "1.4",
+      "fileName": "SpectrumLibrary_1.4.elf",
+      "filePath": "payloads/download/spectrum-library/1.4/SpectrumLibrary_1.4.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4/SpectrumLibrary_1.4.elf",
+      "hash": "de2a7b8c192fc4f2d3c2210123d662a0a2e09998e2000fa064ca969ac72d427d",
+      "fileSize": 5072504,
+      "releaseDate": "2026-06-14",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "Grouped entries with the same `titleId` into one library card.",
+        "Detail view now shows individual variants for games, formats, DLCs, and backports.",
+        "Destination shortcuts were simplified to `/data`, `/mnt`, and `/mnt/usb0`.",
+        "Poster rendering now uses full-image fit to avoid cutting logos and cover text.",
+        "Catalog items can now use the optional `apremu` field, shown as a red cover badge.",
+        "Arabic and Turkish languages \u200b\u200badded.",
+        "Downloads with connection errors can be resumed from where they were interrupted.",
+        "<img width=\"1337\" height=\"669\" alt=\"image\" src=\"https://github.com/user-attachments/assets/321ee3d4-27bb-4e46-949a-ba1fe1db248f\" />",
+        "<img width=\"1344\" height=\"758\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fbf81912-ed9a-4753-8169-921cd43e5a49\" />"
+      ]
+    },
+    {
       "version": "SpectrumLibrary_1.4",
       "fileName": "SpectrumLibrary_1.4.elf",
       "filePath": "payloads/download/spectrum-library/SpectrumLibrary_1.4/SpectrumLibrary_1.4.elf",
@@ -25,7 +70,7 @@
       "hash": "de2a7b8c192fc4f2d3c2210123d662a0a2e09998e2000fa064ca969ac72d427d",
       "fileSize": 5072504,
       "releaseDate": "2026-06-14",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Grouped entries with the same `titleId` into one library card.",

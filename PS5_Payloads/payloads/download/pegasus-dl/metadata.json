@@ -18,6 +18,24 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.5.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.5.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.5.0/pegasus_dl.elf",
+      "hash": "d48b96e93a5d47324bd1adc79ae834009c297fdb5759a136552158ef5e2a1ab6",
+      "fileSize": 20136400,
+      "releaseDate": "2026-06-19",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Reworked File Manager into a dual-pane workflow with operation status kept at the top and only current operations shown.",
+        "Added File Manager mount shortcuts and a RAR extraction action.",
+        "Improved File Manager write operations with refreshed directory state, clearer error output, and permissive permissions for created/uploaded files.",
+        "Added less invasive APR Emu runtime overrides that can auto-apply on startup and Library load.",
+        "Made download-link intake more tolerant, including encoded link forms."
+      ]
+    },
+    {
       "version": "1.4.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.4.0/pegasus_dl.elf",
@@ -25,7 +43,7 @@
       "hash": "3e2731fba643b7f303a6a6dc2092edf3bca213cc44d73463c9f74d3887c7bc09",
       "fileSize": 19982680,
       "releaseDate": "2026-06-15",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Added the File Manager tab for browsing PS5 storage, uploads, downloads, folder archive downloads, rename, copy, move, delete, and folder creation.",
