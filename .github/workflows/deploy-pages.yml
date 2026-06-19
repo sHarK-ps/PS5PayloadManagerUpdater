@@ -3,12 +3,7 @@ name: Deploy to Github Pages
 on:
   # Runs every 4 hours
   schedule:
-    - cron: '0 0 * * *'    
-    - cron: '0 4 * * *'    
-    - cron: '0 8 * * *'    
-    - cron: '0 12 * * *'    
-    - cron: '0 16 * * *'    
-    - cron: '0 20 * * *'    
+    - cron: '1 */4 * * *'      
   push:
     branches:
       - main
