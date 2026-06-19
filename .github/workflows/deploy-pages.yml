@@ -1,9 +1,9 @@
 name: Deploy to Github Pages
 
 on:
-  # Runs every hour
+  # Runs every 4 hours
   schedule:
-    - cron: '0 * * * *'    # Every Hour
+    - cron: '1 */4 * * *'      
   push:
     branches:
       - main
