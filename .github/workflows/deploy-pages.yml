@@ -5,7 +5,8 @@ on:
   schedule:
     - cron: '0 * * * *'    # Every Hour
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       force_payload_update:
