@@ -18,6 +18,23 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.2",
+      "fileName": "SpectrumLibrary_1.4.2.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.2/SpectrumLibrary_1.4.2.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.2/SpectrumLibrary_1.4.2.elf",
+      "hash": "54755ce62d99be610afe364e26de05eaa9e2d92192cda525790a563c6296261f",
+      "fileSize": 5099464,
+      "releaseDate": "2026-06-20",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "<img width=\"897\" height=\"503\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a947f708-19e2-46a3-a117-72d4c2ee69f9\" />",
+        "Added `/mnt/ext1` as a new destination shortcut.",
+        "<img width=\"731\" height=\"78\" alt=\"image\" src=\"https://github.com/user-attachments/assets/deaf6b92-9d51-402f-8c84-b7a511d6cb07\" />",
+        "Improved display of `standard` and `backport` metadata in the details screen."
+      ]
+    },
+    {
       "version": "1.4.1",
       "fileName": "SpectrumLibrary_1.4.1.elf",
       "filePath": "payloads/download/spectrum-library/1.4.1/SpectrumLibrary_1.4.1.elf",
@@ -25,7 +42,7 @@
       "hash": "2a0c96c74d0b36a34bd8424ba92a173775ef54a3878f4d05d1772bc4061394b7",
       "fileSize": 5098792,
       "releaseDate": "2026-06-19",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "<img width=\"1918\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/80c6ed2d-d938-4f06-a18d-8337342c47b2\" />",
