@@ -18,6 +18,27 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.6.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.6.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.6.0/pegasus_dl.elf",
+      "hash": "29b62ef5004729af92a40caeeb956c6fd2c1a795079317a4e3285599a641a89e",
+      "fileSize": 20214384,
+      "releaseDate": "2026-06-21",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Added Real-Debrid support with a local token setting, token-free status",
+        "responses, supported-host badges, multi-file selection, and queueing through",
+        "the normal downloader.",
+        "Kept fresh downloads on four ranged connections by default, moved supported",
+        "provider details into the Downloads settings panel, and tightened range-probe",
+        "fallback for hosts that return too much data.",
+        "Added Filek as a supported direct browser-capture provider alongside",
+        "VikingFile."
+      ]
+    },
+    {
       "version": "1.5.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.5.0/pegasus_dl.elf",
@@ -25,7 +46,7 @@
       "hash": "d48b96e93a5d47324bd1adc79ae834009c297fdb5759a136552158ef5e2a1ab6",
       "fileSize": 20136400,
       "releaseDate": "2026-06-19",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Reworked File Manager into a dual-pane workflow with operation status kept at the top and only current operations shown.",

@@ -28,10 +28,10 @@
     {
       "name": "Pegasus-DL",
       "filename": "pegasus_dl.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.5.0/pegasus_dl.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/pegasus-dl/1.6.0/pegasus_dl.elf",
       "description": "Direct package downloading from your PS5, managed through a local web interface.",
-      "version": "1.5.0",
-      "checksum": "d48b96e93a5d47324bd1adc79ae834009c297fdb5759a136552158ef5e2a1ab6"
+      "version": "1.6.0",
+      "checksum": "29b62ef5004729af92a40caeeb956c6fd2c1a795079317a4e3285599a641a89e"
     },
     {
       "name": "Spectrum Library",
