@@ -18,6 +18,24 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.7.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.7.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.7.0/pegasus_dl.elf",
+      "hash": "cb2a4b3c248323f2432ce118cb1bf4975146035239ce9b571a9bdb51b3fee226",
+      "fileSize": 20333680,
+      "releaseDate": "2026-06-24",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Added TorBox support with local token storage, supported-host detection, service selection when multiple debrid providers match, multi-file selection, and queueing through the normal downloader.",
+        "Added manual link downloads so a direct URL can be named and queued without a catalog entry.",
+        "URL sources can now be refreshed in place, and enabled URL sources refresh automatically from the backend.",
+        "Improved provider capture by detecting download file extensions more reliably and tuning PS5 curl socket behavior during downloads.",
+        "Refined Store artwork sizing, equal-height grid rows, and the settings panels for download and debrid controls."
+      ]
+    },
+    {
       "version": "1.6.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.6.0/pegasus_dl.elf",
@@ -25,7 +43,7 @@
       "hash": "29b62ef5004729af92a40caeeb956c6fd2c1a795079317a4e3285599a641a89e",
       "fileSize": 20214384,
       "releaseDate": "2026-06-21",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Added Real-Debrid support with a local token setting, token-free status",
