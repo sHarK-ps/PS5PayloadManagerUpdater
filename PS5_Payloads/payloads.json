@@ -20,10 +20,10 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/cheats/cheatrunner/0.14/CheatRunner.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/cheats/cheatrunner/0.15/CheatRunner.elf",
       "description": "CheatRunner is a PS5 web launcher and cheat trainer for already-jailbroken PS5 consoles.",
-      "version": "0.14",
-      "checksum": "5ffe8ed97fd6021cfad2b44a1be68c1b9f6e84c1e3a8d925f9e3b975235aa99f"
+      "version": "0.15",
+      "checksum": "b48a2424d90a4d34bca7824ce33fae6a79c07281a87a38d080776a1e6987cc68"
     },
     {
       "name": "Pegasus-DL",
