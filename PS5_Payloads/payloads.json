@@ -172,10 +172,10 @@
     {
       "name": "websrv",
       "filename": "websrv-ps5.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.33/websrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.34/websrv-ps5.elf",
       "description": "Custom homebrew loader. Runs on port 8080.",
-      "version": "0.33",
-      "checksum": "4676a40ac4c7ca1adeb04980efa48dd33a8961446b42e6a12abfcbe96090c8ac"
+      "version": "0.34",
+      "checksum": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263"
     }
   ]
 }
