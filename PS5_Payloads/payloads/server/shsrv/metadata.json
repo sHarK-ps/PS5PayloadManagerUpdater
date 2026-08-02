@@ -18,6 +18,20 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "0.20",
+      "fileName": "shsrv-ps5.elf",
+      "filePath": "payloads/server/shsrv/0.20/shsrv-ps5.elf",
+      "downloadUrl": "https://github.com/ps5-payload-dev/shsrv/releases/download/v0.20/shsrv-ps5.elf",
+      "hash": "fa4ccb2587bb61be317df0d001f668b17ebf9b4aafad87acf691b1fb8da0bd2d",
+      "fileSize": 986184,
+      "releaseDate": "2026-08-02",
+      "isDefault": true,
+      "isPreRelease": true,
+      "changelog": [
+        "\u26a0 This is a pre-release version. Use with caution."
+      ]
+    },
+    {
       "version": "0.19",
       "fileName": "shsrv-ps5.elf",
       "filePath": "payloads/server/shsrv/0.19/shsrv-ps5.elf",
@@ -25,7 +39,7 @@
       "hash": "797827b50a93dbf327abdca45063d76ea24b17e561d927f397a0b73cadb2e2bd",
       "fileSize": 981872,
       "releaseDate": "2026-06-28",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": []
     },
