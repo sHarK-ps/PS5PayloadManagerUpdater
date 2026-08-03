@@ -26,9 +26,13 @@
       "fileSize": 1597864,
       "releaseDate": "2026-08-02",
       "isDefault": true,
-      "isPreRelease": true,
+      "isPreRelease": false,
       "changelog": [
-        "\u26a0 This is a pre-release version. Use with caution."
+        "rebuild with latest sdk",
+        "VVVVVV: initial commit",
+        "Wolf4SDL: initial commit",
+        "CrispyDoom: Initial commit",
+        "hbldr: add support for relative paths in file-related syscalls for later firmwares"
       ]
     },
     {
