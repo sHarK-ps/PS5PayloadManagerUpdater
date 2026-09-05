@@ -18,6 +18,52 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.4",
+      "fileName": "SpectrumLibrary_1.4.4.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.4/SpectrumLibrary_1.4.4.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.4/SpectrumLibrary_1.4.4.elf",
+      "hash": "2005b5e169dc360c52b9033cc02bce4169a9d4a078627c543b9bbcf66607b9d5",
+      "fileSize": 12926856,
+      "releaseDate": "2026-09-04",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Spectrum Library 1.4.4",
+        "Added a lightweight debug log saved at /data/SpectrumLibrary/download.log.",
+        "Improved stability for large downloads.",
+        "Improved download retry and resume behavior after interruptions.",
+        "Improved network handling for the download system.",
+        "Download start notifications now show the selected language and game name.",
+        "Download canceled notifications now follow the selected language.",
+        "Added GitHub Releases update checking.",
+        "Added a mandatory update warning when a newer version is available.",
+        "Added in-app ELF update download directly to /data/pldmgr/payloads."
+      ]
+    },
+    {
+      "version": "1.4.3",
+      "fileName": "SpectrumLibrary_1.4.3.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.3/SpectrumLibrary_1.4.3.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.3/SpectrumLibrary_1.4.3.elf",
+      "hash": "11b261457dbb7fee013028a667699ba3c673e4a8ae376a377efb51d2f6b6b257",
+      "fileSize": 12913768,
+      "releaseDate": "2026-08-24",
+      "isDefault": false,
+      "isPreRelease": false,
+      "changelog": [
+        "<img width=\"1547\" height=\"874\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b7b17bd3-1c14-4939-ba40-fc1789026e44\" />",
+        "Added Polish language support.",
+        "Improvements to PS5 navigation.",
+        "Added folder creation function in settings.",
+        "Games database overhauled.",
+        "Spectrum Library is now in the Media category to avoid cluttering the Games area.",
+        "Special thanks to the upload team:",
+        "Rafael - Deni Dias - Reis - Iuri - Gk Dicas",
+        "Extra: Spectrum Library is also available on the PC version for better speed.",
+        "<img width=\"1918\" height=\"1032\" alt=\"image\" src=\"https://github.com/user-attachments/assets/f3e9e2b2-6151-49b8-abc6-2242d37e4891\" />"
+      ]
+    },
+    {
       "version": "1.4.2",
       "fileName": "SpectrumLibrary_1.4.2.elf",
       "filePath": "payloads/download/spectrum-library/1.4.2/SpectrumLibrary_1.4.2.elf",
@@ -25,7 +71,7 @@
       "hash": "54755ce62d99be610afe364e26de05eaa9e2d92192cda525790a563c6296261f",
       "fileSize": 5099464,
       "releaseDate": "2026-06-20",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "<img width=\"897\" height=\"503\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a947f708-19e2-46a3-a117-72d4c2ee69f9\" />",

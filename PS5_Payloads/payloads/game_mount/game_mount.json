@@ -12,10 +12,10 @@
     {
       "name": "ShadowMountPlus",
       "filename": "shadowmountplus.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/shadowmountplus/1.6beta16/shadowmountplus.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/game_mount/shadowmountplus/1.7alpha8/shadowmountplus.elf",
       "description": "Automatic game image mounter - Mount .ffpkg, .exfat, and .ffpfs images automatically without manual intervention",
-      "version": "1.6beta16",
-      "checksum": "a35246fb3bb6042b25653b51cdcbc33254b40339342bf1d2dd0d2eceee2ca526"
+      "version": "1.7alpha8",
+      "checksum": "f15653fe90d81e5f82841ca693c0599d307c384d6454c1b0cc18190ae1ef4812"
     },
     {
       "name": "kstuff-lite (drakmor fork)",
