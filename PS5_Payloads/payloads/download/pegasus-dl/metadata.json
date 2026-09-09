@@ -18,6 +18,25 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.8.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.8.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.8.0/pegasus_dl.elf",
+      "hash": "3665fa275a185e597ef364379a7f7ad5a9d58f30fda2af6bd04e43299ff2e669",
+      "fileSize": 20411008,
+      "releaseDate": "2026-09-09",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Direct and resolved `.pkg` links can now be handed to the native PS5",
+        "downloader after an explicit user action.",
+        "Native package handoff works across direct links, browser-captured links,",
+        "Real-Debrid, and TorBox, with clear dispatch feedback in the web interface.",
+        "Updated the launcher package metadata so the Pegasus DL tile appears in the",
+        "PS5 Media area instead of the Games area."
+      ]
+    },
+    {
       "version": "1.7.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.7.0/pegasus_dl.elf",
@@ -25,7 +44,7 @@
       "hash": "cb2a4b3c248323f2432ce118cb1bf4975146035239ce9b571a9bdb51b3fee226",
       "fileSize": 20333680,
       "releaseDate": "2026-06-24",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Added TorBox support with local token storage, supported-host detection, service selection when multiple debrid providers match, multi-file selection, and queueing through the normal downloader.",
