@@ -18,6 +18,20 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.5",
+      "fileName": "SpectrumLibrary_1.4.5.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.5/SpectrumLibrary_1.4.5.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.5/SpectrumLibrary_1.4.5.elf",
+      "hash": "cd93973a89263fad0b13b39d77d7fbb401c7c7c641bc036965876c810ebf534e",
+      "fileSize": 12964952,
+      "releaseDate": "2026-09-11",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Last ELF update before the native homebrew is released."
+      ]
+    },
+    {
       "version": "1.4.4",
       "fileName": "SpectrumLibrary_1.4.4.elf",
       "filePath": "payloads/download/spectrum-library/1.4.4/SpectrumLibrary_1.4.4.elf",
@@ -25,7 +39,7 @@
       "hash": "2005b5e169dc360c52b9033cc02bce4169a9d4a078627c543b9bbcf66607b9d5",
       "fileSize": 12926856,
       "releaseDate": "2026-09-04",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Spectrum Library 1.4.4",
