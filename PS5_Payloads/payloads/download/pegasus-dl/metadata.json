@@ -18,6 +18,26 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.9.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.9.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.9.0/pegasus_dl.elf",
+      "hash": "6336c626f0fbdef1272cc5d4e0239d7b44bf40f8106679083cf50d4c8e02389b",
+      "fileSize": 20496520,
+      "releaseDate": "2026-09-15",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Added Included sources backed by the remotely maintained catalog manifest, so",
+        "available catalogs can be discovered and enabled without entering their URLs",
+        "manually.",
+        "Included sources preserve user state and cached packages across manifest",
+        "updates, retain the last valid manifest, and identify newly added entries.",
+        "Catalog `.pkg` links now resolve redirects before native PS5 Downloads",
+        "handoff, avoiding unresolved download-page redirects during AppInst requests."
+      ]
+    },
+    {
       "version": "1.8.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.8.0/pegasus_dl.elf",
@@ -25,7 +45,7 @@
       "hash": "3665fa275a185e597ef364379a7f7ad5a9d58f30fda2af6bd04e43299ff2e669",
       "fileSize": 20411008,
       "releaseDate": "2026-09-09",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Direct and resolved `.pkg` links can now be handed to the native PS5",
