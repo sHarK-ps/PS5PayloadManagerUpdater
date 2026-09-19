@@ -18,6 +18,29 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.6",
+      "fileName": "SpectrumLibrary_1.4.6.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.6/SpectrumLibrary_1.4.6.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.6/SpectrumLibrary_1.4.6.elf",
+      "hash": "73dd3f3938867ac970207ae8e4093e2d0c5b005bcad1ff9ff2aeb5d34294a161",
+      "fileSize": 14456760,
+      "releaseDate": "2026-09-19",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Spectrum Library v1.4.6",
+        "What\u2019s New",
+        "Added automatic DPI service detection and startup when Spectrum Library launches.",
+        "Improved native FPKG installation through DPI on port 12875.",
+        "The FPKG filter now displays game packages only.",
+        "FPKG DLC content remains available in the DLC category.",
+        "Added a green LZ4 compatibility badge to supported games.",
+        "Improved DPI request validation and error handling.",
+        "Added protection against starting multiple DPI instances simultaneously.",
+        "General stability and interface improvements."
+      ]
+    },
+    {
       "version": "1.4.5",
       "fileName": "SpectrumLibrary_1.4.5.elf",
       "filePath": "payloads/download/spectrum-library/1.4.5/SpectrumLibrary_1.4.5.elf",
@@ -25,7 +48,7 @@
       "hash": "cd93973a89263fad0b13b39d77d7fbb401c7c7c641bc036965876c810ebf534e",
       "fileSize": 12964952,
       "releaseDate": "2026-09-11",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Last ELF update before the native homebrew is released."
