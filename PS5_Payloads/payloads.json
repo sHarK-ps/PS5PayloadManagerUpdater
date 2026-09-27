@@ -35,11 +35,11 @@
     },
     {
       "name": "Spectrum Library",
-      "filename": "SpectrumLibrary_1.4.6.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/1.4.6/SpectrumLibrary_1.4.6.elf",
+      "filename": "LegacyJB_1.1.bin",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/1.4.7/LegacyJB_1.1.bin",
       "description": "lightweight content manager designed to organize and deliver supported game files",
-      "version": "1.4.6",
-      "checksum": "73dd3f3938867ac970207ae8e4093e2d0c5b005bcad1ff9ff2aeb5d34294a161"
+      "version": "1.4.7",
+      "checksum": "9c7b60380153cda2eb4a6f20ddc46774a621706388714d0fd97b492a6152f751"
     },
     {
       "name": "BackPork",

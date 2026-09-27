@@ -18,6 +18,29 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.7",
+      "fileName": "LegacyJB_1.1.bin",
+      "filePath": "payloads/download/spectrum-library/1.4.7/LegacyJB_1.1.bin",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.7/LegacyJB_1.1.bin",
+      "hash": "9c7b60380153cda2eb4a6f20ddc46774a621706388714d0fd97b492a6152f751",
+      "fileSize": 477152,
+      "releaseDate": "2026-09-27",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Spectrum Library 1.4.7",
+        "<img width=\"1918\" height=\"1079\" alt=\"image\" src=\"https://github.com/user-attachments/assets/86eac367-51ee-4a48-bacf-6e015f48c8d7\" />",
+        "<img width=\"1918\" height=\"1079\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6f08781b-088b-470d-945e-30e1073d2f4d\" />",
+        "What\u2019s New",
+        "Added native PS5 Homebrew support.",
+        "Added a dedicated Homebrew catalog section.",
+        "Added platform selection for PS4 and PS5 content.",
+        "General stability and interface improvements.",
+        "Requirements",
+        "To use the Homebrew feature, you need to launch the console with LegacyJB_1.1.bin or use etaHEN with the Jailbreak Legacy option enabled."
+      ]
+    },
+    {
       "version": "1.4.6",
       "fileName": "SpectrumLibrary_1.4.6.elf",
       "filePath": "payloads/download/spectrum-library/1.4.6/SpectrumLibrary_1.4.6.elf",
@@ -25,7 +48,7 @@
       "hash": "73dd3f3938867ac970207ae8e4093e2d0c5b005bcad1ff9ff2aeb5d34294a161",
       "fileSize": 14456760,
       "releaseDate": "2026-09-19",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Spectrum Library v1.4.6",
