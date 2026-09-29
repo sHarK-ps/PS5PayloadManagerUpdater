@@ -20,6 +20,21 @@
   ],
   "versions": [
     {
+      "version": "1.10.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.10.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.0/pegasus_dl.elf",
+      "hash": "724b245d8de08e5a16865180fac7f30eda72b94d45c9cc73686d9b2defc33f66",
+      "fileSize": 20530776,
+      "releaseDate": "2026-09-29",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Updated the PS5 payload SDK to v0.43 and embedded nanoDNS to 0.4, bringing",
+        "firmware 13.60 support to the payload and browser-assisted provider capture."
+      ]
+    },
+    {
       "version": "1.9.0",
       "fileName": "pegasus_dl.elf",
       "filePath": "payloads/download/pegasus-dl/1.9.0/pegasus_dl.elf",
@@ -27,7 +42,7 @@
       "hash": "6336c626f0fbdef1272cc5d4e0239d7b44bf40f8106679083cf50d4c8e02389b",
       "fileSize": 20496520,
       "releaseDate": "2026-09-15",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Added Included sources backed by the remotely maintained catalog manifest, so",
