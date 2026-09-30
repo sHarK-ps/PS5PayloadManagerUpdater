@@ -15,9 +15,7 @@
     "type": "Unknown",
     "url": ""
   },
-  "supportedFirmwares": [
-    "3."
-  ],
+  "supportedFirmwares": [],
   "versions": [
     {
       "version": "1.10.0",
