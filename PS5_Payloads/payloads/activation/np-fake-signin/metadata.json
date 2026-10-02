@@ -18,6 +18,20 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4",
+      "fileName": "np-fake-signin-ps5.elf",
+      "filePath": "payloads/activation/np-fake-signin/1.4/np-fake-signin-ps5.elf",
+      "downloadUrl": "https://git.etawen.dev/earthonion/np-fake-signin/releases/download/v1.4/np-fake-signin-ps5.elf",
+      "hash": "9ec8562b3e3f6508071e280037e225371d8a6c297e74b8ae4d240e357ee38eca",
+      "fileSize": 121552,
+      "releaseDate": "2026-10-02",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Rebuilt against ps5-payload-sdk v0.43 and ps4-payload-sdk v0.9. Built from the dev source (real HMAC key, runtime config.dat generation + notifications)."
+      ]
+    },
+    {
       "version": "1.3",
       "fileName": "np-fake-signin-ps5.elf",
       "filePath": "payloads/activation/np-fake-signin/1.3/np-fake-signin-ps5.elf",
@@ -25,7 +39,7 @@
       "hash": "f5c66fcb9e3f512e5463a7123d819b87f063d9955639366fa7ad26a2f0abefa4",
       "fileSize": 120216,
       "releaseDate": "2026-05-15",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "built with newest sdk"

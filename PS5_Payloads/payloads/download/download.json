@@ -11,11 +11,11 @@
     },
     {
       "name": "Spectrum Library",
-      "filename": "LegacyJB_1.1.bin",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/1.4.7/LegacyJB_1.1.bin",
+      "filename": "SpectrumLibrary_1.4.8.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/download/spectrum-library/1.4.8/SpectrumLibrary_1.4.8.elf",
       "description": "lightweight content manager designed to organize and deliver supported game files",
-      "version": "1.4.7",
-      "checksum": "9c7b60380153cda2eb4a6f20ddc46774a621706388714d0fd97b492a6152f751"
+      "version": "1.4.8",
+      "checksum": "5d1372d48f76167e3f9e24b335cf571ea6e4b3960e6b7202d2802b0f78c3a519"
     }
   ]
 }

@@ -18,6 +18,29 @@
   "supportedFirmwares": [],
   "versions": [
     {
+      "version": "1.4.8",
+      "fileName": "SpectrumLibrary_1.4.8.elf",
+      "filePath": "payloads/download/spectrum-library/1.4.8/SpectrumLibrary_1.4.8.elf",
+      "downloadUrl": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.8/SpectrumLibrary_1.4.8.elf",
+      "hash": "5d1372d48f76167e3f9e24b335cf571ea6e4b3960e6b7202d2802b0f78c3a519",
+      "fileSize": 15538472,
+      "releaseDate": "2026-10-01",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "**Spectrum Library 1.4.8**",
+        "**What\u2019s New**",
+        "New layout",
+        "Bug fixes",
+        "Added internal DPI support for FW 13.60",
+        "Improved download speed",
+        "<img width=\"3840\" height=\"2160\" alt=\"Spectrum Library_20261001022901\" src=\"https://github.com/user-attachments/assets/942f1945-7df6-44f1-b24a-ac618f68ab64\" />",
+        "<img width=\"3840\" height=\"2160\" alt=\"Spectrum Library_20261001022913\" src=\"https://github.com/user-attachments/assets/f585c175-cc90-43e4-8404-7155017f4c6f\" />",
+        "**Requirements**",
+        "To use the Homebrew feature, you need to launch the console with LegacyJB or use etaHEN with the Jailbreak Legacy option enabled."
+      ]
+    },
+    {
       "version": "1.4.7",
       "fileName": "LegacyJB_1.1.bin",
       "filePath": "payloads/download/spectrum-library/1.4.7/LegacyJB_1.1.bin",
@@ -25,7 +48,7 @@
       "hash": "9c7b60380153cda2eb4a6f20ddc46774a621706388714d0fd97b492a6152f751",
       "fileSize": 477152,
       "releaseDate": "2026-09-27",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Spectrum Library 1.4.7",
