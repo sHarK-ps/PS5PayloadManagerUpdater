@@ -12,10 +12,10 @@
     {
       "name": "ELF Loader",
       "filename": "elfldr-ps5.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/elfldr/0.26/elfldr-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/elfldr/0.27/elfldr-ps5.elf",
       "description": "ELF loader",
-      "version": "0.26",
-      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1"
+      "version": "0.27",
+      "checksum": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d"
     },
     {
       "name": "ftpsrv",
@@ -52,10 +52,10 @@
     {
       "name": "websrv",
       "filename": "websrv-ps5.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.34/websrv-ps5.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/websrv/0.35/websrv-ps5.elf",
       "description": "Custom homebrew loader. Runs on port 8080.",
-      "version": "0.34",
-      "checksum": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263"
+      "version": "0.35",
+      "checksum": "25501b41887a42789792d1367edd2fc892454bfe6b0b1519bc36456a581f264c"
     }
   ]
 }

@@ -13,10 +13,33 @@
   "toPort": 9021,
   "license": {
     "type": "Unknown",
-    "url": ""
+    "url": "https://github.com/pegasus-ps5/pegasus-dl/blob/main/LICENSE"
   },
   "supportedFirmwares": [],
   "versions": [
+    {
+      "version": "1.11.0",
+      "fileName": "pegasus_dl.elf",
+      "filePath": "payloads/download/pegasus-dl/1.11.0/pegasus_dl.elf",
+      "downloadUrl": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
+      "hash": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9",
+      "fileSize": 20612136,
+      "releaseDate": "2026-10-09",
+      "isDefault": true,
+      "isPreRelease": false,
+      "changelog": [
+        "Parallel downloads now use persistent connections and write ranges directly",
+        "into the temporary file, avoiding a final segment-copy pass. New configurations",
+        "default to 16 connections, with a single-stream fallback for incompatible hosts.",
+        "RAR/RAR5 and 7z archive cache downloads use the same parallel engine. Paused",
+        "downloads resume from checked checkpoints, and paused extraction restarts from",
+        "the completed cache without downloading again.",
+        "Completed RAR caches survive password prompts and wrong passwords. UTF-8",
+        "passwords and retries for legacy encrypted RAR files are handled correctly.",
+        "Extraction progress now counts bytes across files. Cancellation and",
+        "finalization are coordinated to avoid committing cancelled work."
+      ]
+    },
     {
       "version": "1.10.1",
       "fileName": "pegasus_dl.elf",
@@ -25,7 +48,7 @@
       "hash": "b24fdc62fc6cad14684b214a9c5be6c1221585afbf9493e387ab90f9dee21138",
       "fileSize": 20547160,
       "releaseDate": "2026-09-30",
-      "isDefault": true,
+      "isDefault": false,
       "isPreRelease": false,
       "changelog": [
         "Faster Store search and source filtering for large catalogs, with cached",
