@@ -20,10 +20,10 @@
     {
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5-install.elf",
-      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/ftpsrv/0.21.1/ftpsrv-ps5-install.elf",
+      "url": "https://raw.githubusercontent.com/sHarK-ps/PS5PayloadManagerUpdater/main/PS5_Payloads/payloads/server/ftpsrv/0.22/ftpsrv-ps5-install.elf",
       "description": "FTP server. Runs on port 2121.",
-      "version": "0.21.1",
-      "checksum": "0ccfe0097081be0514aabef34390a0f6776226e8b3eefbb047964584e0cfe3a9"
+      "version": "0.22",
+      "checksum": "5e845b93dac8906f15f72dbe5b3ee07d3a4c47474a3afd4126d8ba4a280b106d"
     },
     {
       "name": "gdbsrv",
